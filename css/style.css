@@ -45,13 +45,9 @@
 }
 
 h1 {
-    color: white
+    color: white;
 }
 
 h2{
     color: red;
-}
-
-.container {
-    font-size: 150%;
 }
