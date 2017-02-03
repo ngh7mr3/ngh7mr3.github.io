@@ -48,10 +48,44 @@
 		a {
 			text-decoration:none;
 		}
-
-		h2:hover{
-			color:#00ffff;
+    .element h2 {
+			transition: color 0.2s linear;
+			transition: font-size 0.2s linear;
 		}
+
+		.element h2:hover{
+			font-size: 45px;
+			color:#46fd1a;
+		}
+		.card-container {
+  			height: 150px;
+  			perspective: 600;
+			position: relative;
+  			width: 150px;
+		}
+		.card {
+  			height: 100%;
+  			position: absolute;
+  			transform-style: preserve-3d;
+  			transition: all 0.8s ease-in-out;
+  			width: 100%;
+		}
+		.card:hover {
+  			transform: rotateX(180deg);
+		}
+		.card .side {
+			height: 100%;
+  			backface-visibility: hidden;
+  			position: absolute;
+  			width: 100%;
+		}
+		.card .back {
+  			transform: rotateX(180deg);
+		}
+		.card p {
+			position: relative;
+			left:20%;
+			text-align: center;
 	</style>
 </head>
 <body>
@@ -61,7 +95,16 @@
     	</video>
     </div>
     <div class='cont'>
-	    <h1>NGH7MR3</h1>
+    	<div class='card-container'>
+	    	<div class='card'>
+		    	<div class='side'>
+		    		<h1>NGH7MR3</h1>
+		    	</div>
+		    	<div class='side back'>
+		    		<p><a href='https://www.youtube.com/channel/UCT_Gjxm909y3SeygS3umvKQ'><img src='video/logo.png' height='100px' width="100px"></a></p>
+		    	</div>
+		    </div>
+		</div>
 	    <div class='list'>
 	    	<a href='http://steamcommunity.com/id/ngh7mr3' class='element'>
 	    		<h2>STEAM</h2>
