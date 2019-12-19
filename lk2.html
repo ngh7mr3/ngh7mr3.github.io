@@ -1,0 +1,542 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+
+<title>Транзистор как четырехполюсник</title>
+<link rel=stylesheet type=text/css href=images/lk_all.css>
+
+</head>
+
+<body lang=RU link=blue vlink=purple bgcolor="#fafffc">
+
+<table width="100%" height="100%" border="0">
+<tr>
+<td align=center valign=top>
+
+<table width="750"  border="0" cellpadding="5" cellspacing="0">
+	<tr>
+	<td>
+
+<p class=MsoNormal align=right style='text-align:right;font-size:11.0pt'><a href="lknav.htm"><b>Оглавление</b></a></p>
+
+<h1 align=center style='line-height:120%;font-size:16.0pt;font-family:
+"Times New Roman";color:olive'><a name="_Toc433109498">2. Транзистор как четырехполюсник</a></h1>
+
+<p class=page_content>
+	<a class=doc_menu href="#_Toc433109500">2.1. Формальные схемы замещения 
+четырехполюсника.</a><br>
+	<a class=doc_menu href="#_Toc433109501">2.2. Внешние характеристики транзистора как  четырехполюсника.</a><br>
+	<a class=doc_menu href="#_Toc433109502">2.3. Связь Y-параметров для
+различных способов включения транзисторов и свойства этих схем.</a><br>
+	<a class=doc_menu href="#_Toc433109503">2.4. Физические схемы замещения транзисторов.</a><br>	
+		<a class=doc_menu href="#m200"><span style='margin-left: 40'>Схема замещения полевого транзистора и ее Y-параметры.</span></a><br>
+		<a class=doc_menu href="#m201"><span style='margin-left: 40'>Схема замещения биполярного транзистора и ее Y-параметры.</span></a><br>
+		
+	<a class=doc_menu href="#cq100">Контрольные вопросы.</a><br>
+
+</p>
+
+<h2 align=center style='line-height:120%;font-size:16.0pt;font-family:
+"Times New Roman";color:maroon'><a name="_Toc433109500">2.1. Формальные схемы замещения 
+четырехполюсника</a></h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>При изучении дисциплин "Теория электрических цепей" и "Теория радиотехнических цепей" было показано, что анализировать работу различных электронных схем удобно, представив транзистор в виде четырехполюсника. В качестве
+напоминания соответствующего материала в <b><a href="lkap2.htm" target="_blank"><span
+style='font-size:12.0pt'>Приложении&nbsp;2</span></a></b>
+приведена система малосигнальных Y-параметров четырехполюсника. При работе
+транзистора в малосигнальном режиме взаимосвязь приращений токов и напряжений
+можно считать линейной, следовательно, четырехполюсник будет <i>линейным</i>, и
+его уравнения передачи запишутся в виде</p>
+
+<a name="mr201"></a><table width="100%" height="100%" border="0">
+<tr>
+	<td width=90%>
+<p class=MsoNormal style='text-align:center'><img border=0 width=196 height=50 src="lk2.files/image002.gif"></p>
+	</td>
+
+	 <td width=10%>
+<p class=MsoNormal style='text-align:right'>(2.1)</p>
+	</td>
+</tr>
+</table>
+<p class=MsoNormal style='text-indent:35.45pt'>Формально системе линейных уравнений (2.1) можно поставить в соответствие различные электрические схемы, содержащие линейные элементы. Такие схемы называют формальными схемами замещения, или макромоделями. Они не отражают физических процессов, происходящих в электронном приборе, однако
+формально устанавливают правильную взаимосвязь входных и выходных переменных,
+если имеют такие же параметры передачи, как и электронный прибор. Рассмотрим
+два наиболее часто употребляемых вида схем замещения.</p>
+
+<table border=0 width=250 height=148 cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img border=0 width=250 height=148 src="lk2.files/image003.gif">
+  </td>
+ </tr>
+</table>
+
+
+<p class=MsoNormal style='text-indent:35.45pt;page-break-after:avoid'>Схема, показанная на рис.2.1, называемая обычно <i>двухгенераторной</i>, в точности соответствует системе уравнений (2.1).
+ Она содержит два <i>зависимых генератора тока</i> (ГТ). ГТ, стоящий в выходной цепи, управляется входным напряжением и отдает в нагрузку ток <i>Y<sub>21</sub>U<sub>ВХ</sub></i>. Именно
+этот генератор отражает электропреобразовательные свойства прибора.
+Амплитуда выходного тока будет тем больше, чем больше проводимость прямой
+передачи (крутизна) транзистора <i>Y<sub>21</sub></i>, являющаяся
+его важнейшим параметром. Второй ГТ включен во входной цепи и отражает
+зависимость (обычно относительно слабую) входного тока от напряжения на выходе, определяемую проводимостью обратной передачи <i>Y<sub>12</sub></i>. Первое
+из уравнений (2.1) указывает, что <i>I<sub>ВХ</sub></i> состоит
+из двух слагаемых: второе соответствует току ГТ <i>Y<sub>12</sub>U<sub>ВЫХ</sub></i>, а
+первое – току, протекающему  через <i>Y<sub>11</sub></i>, за
+счет приложенного к нему напряжения <i>U<sub>ВХ</sub></i>.  Аналогично
+выходная цепь схемы соответствует второму уравнению.</p>
+
+<table width=566 height=179 cellspacing=0 cellpadding=0 align=center border=0>
+ <tr>
+  <td><img border=0 width=566 height=179 src="lk2.files/image004.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'> Часто используют более простую с точки зрения
+расчетов одногенераторную, или П-образную схему замещения  (рис.2.2,а).
+Значения ее элементов нетрудно установить, проделав опыты короткого замыкания
+по входу и выходу. При к.з. по входу <i>U<sub>ВХ</sub></i> = 0) из
+рис.2.3,б имеем:</p>
+
+<p class=MsoNormal style='text-align:center'> <i>I<sub>ВХ </sub></i> = – <i>U<sub>ВЫХ</sub>Y<sub>2</sub></i>.</p>
+
+<p class=MsoNormal style='margin-top:6pt;text-indent:35.45pt;'>Учитывая, что <i>Y<sub>12 </sub></i> = <i>I<sub>ВХ </sub></i>/ <i>U<sub>ВЫХ</sub></i>, получим <i>Y<sub>2</sub></i> = – <i>Y<sub>12</sub></i>.  Из той же схемы:</p>
+
+<p class=MsoNormal style='margin-right:.9pt;text-indent:
+35.45pt;'>               <i>Y<sub>22</sub></i> =<i>I<sub>ВЫХ </sub></i>/ <i>U<sub>ВЫХ</sub></i> = <i>U<sub>ВЫХ</sub>(Y<sub>2 </sub></i>+ <i>Y<sub>3</sub></i>) /<i>U<sub>ВЫХ </sub></i>= <i>Y<sub>2 </sub></i>+ <i>Y<sub>3</sub></i>.</p>
+
+<p class=MsoNormal style='margin-top:6pt'>Откуда                            
+<i>Y<sub>3</sub></i> = <i>Y<sub>22 </sub></i>+ <i>Y<sub>12</sub></i>.</p>
+
+<p class=MsoNormal style='margin-top:6pt;text-indent:
+36.0pt'>Аналогично при к.з. по выходу (<i>U<sub>ВЫХ</sub></i>= 0) из
+рис.2.3,в следует:</p>
+
+<p class=MsoNormal style='margin-top:6pt'>   
+            <i>Y<sub>11</sub></i> =<i>I<sub>ВХ </sub></i>/ <i>U<sub>ВХ </sub></i> = <i>U<sub>ВХ </sub></i>(<i>Y<sub>1 </sub></i>+ <i>Y<sub>2</sub></i>) / <i>U<sub>ВХ </sub></i> = <i>Y<sub>1 </sub></i>+ <i>Y<sub>2</sub></i>, </p>
+
+<p class=MsoNormal style='margin-top:6pt'>откуда
+                            <i>Y<sub>1 </sub></i>= <i>Y<sub>11 </sub></i>+ <i>Y<sub>12</sub></i>.  </p>
+
+<p class=MsoNormal style='margin-top:6pt;text-indent:
+36.0pt;'>И, наконец, </p>
+
+<p class=MsoNormal style='margin-top:6pt'>           
+<i>Y<sub>21</sub>I<sub>ВЫХ </sub></i>/ <i>U<sub>ВХ </sub></i>= (<i>Y<sub>4</sub>U<sub>ВХ</sub></i> - <i>U<sub>ВХ </sub>Y<sub>2</sub></i>) / <i>U<sub>ВХ</sub></i> = <i>Y<sub>4</sub> - Y<sub>2</sub></i>.</p>
+
+<p class=MsoNormal style='margin-top:6pt'>Следовательно,    
+            <i>Y<sub>4</sub></i> = <i>Y<sub>21</sub></i> – <i>Y<sub>12</sub></i>.</p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a></p>
+
+<h2 align=center style='margin-top:30.0pt;text-align:center;line-height:120%;font-size:16.0pt;font-family:
+"Times New Roman";color:maroon'><a name="_Toc433109501"></a>2.2. Внешние характеристики транзистора</h2>
+
+<h2 align=center style='margin-top:0cm;text-align:center'><span
+style='font-size:16.0pt;font-family:"Times New Roman";color:maroon'>как  четырехполюсника</span></h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table border=0 width=237 height=178 cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img   border=0 width=237 height=178 src="lk2.files/image005.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:36.85pt'>Подключим ко входу четырехполюсника  источник тока <i>I<sub>И </sub></i>с внутренней проводимостью <i>Y<sub>И</sub></i> и на выходе нагрузку с проводимостью <i>Y<sub>Н</sub></i>. Комплексный коэффициент передачи по напряжению нагруженного четырехполюсника <nobr><i>K</i> = <i>U<sub>ВЫХ</sub></i> / <i>U<sub>ВХ</sub></i></nobr>. &nbsp;&nbsp;Из схемы рис.2.3 следует:   &nbsp;&nbsp;&nbsp;<nobr><i>I<sub>ВЫХ</sub></i> = – <i>Y<sub>Н </sub>U<sub>ВЫХ</sub></i></nobr> (знак «минус» вводится из-за несоответствия выбранных направлений тока <i>I<sub>ВЫХ </sub></i> и напряжения <i>U</i><sub>ВЫХ </sub>).</p>
+
+<p class=MsoNormal style='text-indent:36.85pt;'>
+Подставив <i>I<sub>ВЫХ</sub></i> во второе уравнение (2.1), получим:</p>
+
+<p class=MsoNormal style='text-align:center'>
+–<i>Y<sub>Н </sub>U<sub>ВЫХ</sub></i> = <i>Y<sub>21</sub></i> <i>U<sub>ВХ</sub></i> + <i>Y<sub>12</sub>U<sub>ВЫХ</sub></i>.</p>
+
+<p class=MsoNormal>Отсюда</p>
+<table width="100%" height="100%" border="0">
+<tr>
+	<td width=90%>
+<p class=MsoNormal style='text-align:center'>              
+<i>K</i> = –<i>Y<sub>21 </sub></i>/ (<i>Y<sub>22</sub></i> + <i>Y<sub>Н</sub></i>).</p>
+	</td>
+	 <td width=10%>
+<p class=MsoNormal style='text-align:right;'>(2.2)</p>
+	</td>
+</tr>
+</table>
+
+<p class=MsoNormal style='margin-top:6pt'>Поделив обе части первого из уравнений (2.1) на <i>U<sub>ВХ</sub></i>, получим входную проводимость </p>
+
+<table width="100%" height="100%" border="0">
+<tr>
+	<td width=90%>
+<p class=MsoNormal style='text-align:center'>           
+<i>Y<sub>ВХ </sub></i>= <i>I<sub>ВХ </sub></i>/ <i>U<sub>ВХ</sub></i> = <i>Y<sub>11</sub></i> + <i>K Y<sub>12</sub>.</p>
+	</td>
+	 <td width=10%>
+<p class=MsoNormal style='text-align:right;'>(2.3)</p>
+	</td>
+</tr>
+</table>
+
+<p class=MsoNormal>Или, подставив (2.2),</p>
+<table width="100%" height="100%" border="0">
+<tr>
+	<td width=90%>
+<p class=MsoNormal style='text-align:center'>           
+<i>Y<sub>ВХ </sub></i> = <i>Y<sub>11</sub></i> – <i>Y<sub>21 </sub>Y<sub>12 </sub></i>/ (<i>Y<sub>22</sub></i> + <i>Y<sub>Н</sub></i>).</p>
+	</td>
+	 <td width=10%>
+<p class=MsoNormal style='text-align:right'>(2.4)</p>
+	</td>
+</tr>
+</table>
+
+<p class=MsoNormal style='margin-top: 6pt'>Обратим внимание на <em>зависимость
+<i>Y<sub>ВХ</sub></i> от проводимости нагрузки</em>.</p>
+
+<p class=MsoNormal style='text-indent:39.7pt'>Выходную проводимость можно найти, если подвести <i>U<sub>ВЫХ </sub></i> от внешнего источника к выходным зажимам четырехполюсника, а на входе отключить генератор тока, оставив в качестве нагрузки <i>Y<sub>И</sub></i>.   Подставив       <i>I<sub>ВХ</sub></i> = – <i>Y<sub>И </sub> U<sub>ВХ</sub></i>    в первое уравнение (2.1) и найдя коэффициент передачи четырехполюсника в обратном направлении <i>U<sub>ВХ</sub></i>&nbsp;/<i>U<sub>ВЫХ</sub></i>,
+затем, поделив обе части второго уравнения на <i>U<sub>ВЫХ</sub></i>,
+получим</p>
+
+<table width="100%" height="100%" border="0">
+<tr>
+	<td width=90%>
+<p class=MsoNormal style='text-align:center'>           
+<i>Y<sub>ВЫХ </sub></i> = <i>I<sub>ВЫХ </sub></i>/ <i>U<sub>ВЫХ</sub></i> = <i>Y<sub>22</sub></i> – <i>Y<sub>21 </sub>Y<sub>12 </sub></i>/ (<i>Y<sub>11</sub></i> + <i>Y<sub>И</sub></i>).</p>
+	</td>
+	 <td width=10%>
+<p class=MsoNormal align=right style='text-align:right'>(2.5)</p>
+	</td>
+</tr>
+</table>
+
+<p class=MsoNormal style='margin-top: 6pt;text-indent:36.85pt'>Выходная
+проводимость зависит, таким образом, от выходной проводимости источника
+сигнала.</p>
+
+<p class=MsoNormal style='margin-bottom:30.0pt;text-indent:
+36.85pt'>Численные значения <i>Y</i>- параметров,
+а следовательно, <i>K</i>, <i>Y<sub>ВХ</sub></i> и <i>Y<sub>ВЫХ </sub></i> зависят
+от способа включения активного элемента (транзистора): по схеме с <i>общим
+эмиттером - ОЭ </i>(общим истоком - ОИ), <i>с общей базой - ОБ </i>(общим
+затвором - ОЗ) или<i> общим коллектором - ОК </i>(общим стоком - ОС). Этот
+вопрос рассмотрен более подробно в следующем разделе.</p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+
+<h2 align=center style='margin-top:24.0pt;margin-bottom:24pt;
+line-height:120%;font-size:16.0pt;font-family:
+"Times New Roman";color:maroon'><a name="_Toc433109502"></a>2.3. Связь Y-параметров для
+различных способов включения транзисторов и свойства этих схем</h2>
+
+<table border=0 cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img   border=0 width=202 height=171 src="lk2.files/image006.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:24pt'>В общем случае, когда у активного элемента ни один из электродов не является общим (относительно общего электрода подают входное и
+снимают выходное напряжение), т.е. все три зажима находятся под переменными
+потенциалами, его можно представить в виде «плавающего» трехполюсника
+(рис.2.4). Для него справедлива система уравнений:</p>
+
+<table align=center border=0 cellpadding=0 cellspacing=0>
+  <tr>
+  <td><img width=236 height=50 src="lk2.files/image007.gif"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+
+<p class=MsoNormal>
+Основываясь на законах Кирхгофа, можно показать, что, если известна матрица трехполюсника с общим третьим зажимом  <sub><img border=0 width=114
+height=50 src="lk2.files/image008.gif"></sub>,  то всегда можно
+составить матрицу этого трехполюсника для случая, когда ни один из зажимов не
+является общим: </p>
+
+<table cellspacing=0 cellpadding=0 align=center>
+ <tr>
+  <td>
+  <img  border=0 width=335 height=97 src="lk2.files/image010.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal  style='margin-top:12pt'>Здесь обозначено <i>&sum;Y<sub>i
+j </sub>= Y<sub>11</sub></i>+ <i>Y<sub>12</sub>+ Y<sub>21</sub></i>+ <i>Y<sub>22</sub></i>. <br>Данную матрицу легко записать: сумма элементов по каждой строке и каждому столбцу равна нулю. Это так называемая <i>неопределенная матрица.</i> 
+ <span class=illustr_left style="width: 323;">
+<img  width=323 height=162 src="lk2.files/image011.gif" border=0></span>Если один зажим
+является общим, соответствующий столбец и строку нужно вычеркнуть.
+Например, если зажим 3 – эмиттер (или исток) – является общим (рис.2.5,а), то матрица примет
+вид</p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=158 height=50 src="lk2.files/image012.gif">,</p>
+
+<p class=MsoNormal>где через [<i>Y<sub>Э</sub></i>]обозначена матрица <i>Y</i>-параметров схемы с ОЭ. Если общим является электрод 1 (схемы с ОБ или ОЗ) – рис.2.5,б, вычеркиваем первый столбец и первую строку. Оставшуюся часть матрицы необходимо транспонировать, т.к. входным является узел 3, а ему должны соответствовать первая строка и первый столбец: 
+ <span class=illustr_left style='width: 277;vertical-align:middle'><sub><img  width=277 height=66 src="lk2.files/image013.gif" border=0></sub></span>
+<br><br>– матрица <i>Y</i>-параметров схемы с ОБ, выраженная через <i>Y</i>-параметры схемы с ОЭ.</p>
+
+<p class=MsoNormal>Если общий электрод 2 (схемы с ОК и ОС) – рис.2.5,в, то тогда матрица схемы с ОК будет выражена через <i>Y</i>-параметры схемы с ОЭ. </p>
+
+<table align=center width=271 height=58 border=0>
+<tr><td><img  width=271 height=58 src="lk2.files/image014.gif" border=0>
+	</td>
+</tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Из
+общих выражений для <i>K</i>, <i>Y<sub>ВХ</sub></i> и <i>Y<sub>ВЫХ</sub></i> можно найти соответствующие параметры схем с ОК (ОС) и ОБ (ОЗ), выраженные через <i>Y</i>-параметры схемы с ОЭ (ОИ). Сопоставить  внешние параметры для различных схем включения можно, зная соотношение <i>Y</i>-параметров (комплексные величины сравнивают по модулю). Для биполярного транзистора, включенного по схеме с ОЭ справедливо:</p>
+
+<p class=MsoNormal style='text-align:right;text-indent:35.45pt;
+'>|<i>Y<sub>21</sub></i>| &gt;&gt; | <i>Y<sub>11</sub></i> | &gt; |<i>
+Y<sub>22</sub></i>| &gt; | <i>Y<sub>12</sub></i> |                           
+(2.6)</p>
+
+<p class=MsoNormal><a name='lk2_31'></a>Считая, что формула (2.2) записана для схемы с ОЭ, комплексный коэффициент усиления схем с ОБ и ОК с учетом матриц их <i>Y</i>-параметров:</p>
+
+<p class=MsoNormal style='text-align:center;margin-top:6pt'><i>K<sub>Б </sub></i>= – <i>Y<sub>21Б</sub></i> /(<i>Y<sub>22Б </sub></i>+ <i>Y<sub>Н</sub></i>) = (<i>Y<sub>21 </sub></i> + <i>Y<sub>22</sub></i>) / (<i>Y<sub>22 </sub></i>+ <i>Y<sub>Н</sub></i>);</p>
+
+<p class=MsoNormal style='text-align:center;margin-top:6pt'><i>K<sub>К</sub></i>= – <i>Y<sub>21К</sub></i> / (<i>Y<sub>22К </sub></i>+ <i>Y</i><i><sub>Н</sub></i>) = (<i>Y<sub>21 </sub></i>+ <i>Y<sub>11</sub></i>) / (<i>&sum;Y<sub>i j</sub></i>+ <i>Y<sub>Н</sub></i>);</p>
+
+<p class=MsoNormal style='text-indent:35.45pt;margin-top:6pt'>Сравнивая
+эти выражения с (2.2) с учетом (2.6) видим: </p>
+
+<p class=MsoNormal>| <i>K<sub>К</sub></i> | &lt; | <i>K<sub>Э</sub></i> | &le; | <i>K<sub>Б</sub></i> | .
+Кроме того,| <i>K<sub>К</sub></i> | &lt; 1.
+Знак «минус» в (2.2) означает, что выходное напряжение сдвинуто по фазе
+относительно входного на 180&#176;, поскольку в комплексной форме записи</p>
+
+<p class=MsoNormal style='text-align:center'> <i>-1 = exp{-p} =cos <font face="Symbol">&#112;</font> – j sin
+<font face="Symbol">&#112;</font></i> .</p>
+
+<p class=MsoNormal> При включении транзистора по схеме с ОБ или ОК перед комплексными коэффициентами передачи нет знака "минус", т.е. фаза выходного сигнала не инвертируется.</p>
+
+<p class=MsoNormal style='text-indent:1.0cm'>Аналогично формулам (2.4), (2.5), записав их с индексами «б» и «к» и подставив значения <i>Y</i>-параметров из соответствующей матрицы, можно получить выражения входной и выходной проводимостей схем с ОБ и ОК, выраженные через <i>Y</i>-параметры схемы с ОЭ:</p>
+
+<p class=MsoNormal style='text-align:center'><i>Y<sub>ВХ Б </sub></i>= <i>&sum;Y<sub>i j</sub></i> – (<i>Y<sub>21</sub></i> +<i>Y<sub>22 </sub></i>) (<i>Y<sub>22</sub></i> + <i>Y</i><i><sub>12</sub></i>) / (<i>Y<sub>22 </sub></i>+ <i>Y<sub>Н </sub></i>);</p>
+
+<p class=MsoNormal style='text-align:center'><i>Y<sub>ВХ К</sub></i>= <i>Y<sub>11</sub></i> – (<i>Y<sub>21 </sub></i>+ <i>Y<sub>11</sub></i>) (<i>Y<sub>11 </sub></i>+ <i>Y<sub>12</sub></i>) / ( <i>&sum;Y<sub>i j </sub></i>+ <i>Y<sub>Н </sub></i>);</p>
+
+<p class=MsoNormal style='text-align:center'><i>Y<sub>ВЫХ Б </sub></i>= <i>Y<sub>22</sub></i> – (<i>Y<sub>21 </sub></i>+ <i>Y<sub>22</sub></i>) (<i>Y<sub>22 </sub></i>+ <i>Y<sub>12</sub></i>) / ( <i>&sum;Y<sub>i j </sub></i>+ <i>Y<sub>И</sub></i>);</p>
+
+<p class=MsoNormal style='text-align:center'><i>Y<sub>ВЫХ К </sub></i>= <i>&sum;
+Y<sub>i j</sub></i> – (<i>Y<sub>21</sub></i> +<i>Y<sub>11 </sub></i>) (<i>Y<sub>11</sub></i> + <i>Y<sub>12</sub></i>) / (<i>Y<sub>11 </sub></i>+ <i>Y<sub>И </sub></i>).</p>
+
+<p class=MsoNormal style='text-indent:1.0cm'>Сравнение входных и выходных проводимостей для различных схем включения показывает:</p>
+
+<p class=MsoNormal>| <i>Y<sub>ВХ Б</sub></i> | &gt; | <i>Y<sub>ВХ Э</sub></i> | &gt; | <i>Y<sub>ВХ К</sub></i> |;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<i>Y<sub>ВЫХ Б</sub></i> | &gt; | <i>Y<sub>ВЫХ Э</sub></i> | &gt; | <i>Y<sub>ВЫХ К</sub></i> |.</p>
+
+<p class=MsoNormal style='margin-bottom:24.0pt'> <em>Результаты
+анализа желательно запомнить.</em></p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+
+<h2 align=center style='margin-top:30.0pt;margin-bottom:12.0pt;
+text-align:center;line-height:120%;font-size:16.0pt;font-family:"Times New Roman"; color:maroon'><a name="_Toc433109503"></a>2.4. Физические схемы замещения транзисторов</h2>
+
+<p class=MsoNormal style='text-indent:1.0cm'>Формальные схемы замещения
+ удобны при расчетах на одной частоте, однако, неудобны для исследования
+ работы схем в диапазоне частот, т.к.  параметры их элементов частотозависимы
+ и существенно различны для разных типов транзисторов. Комплексные входная и 
+выходная проводимости транзистора <i>Y<sub>11</sub></i>  и <i>Y<sub>22</sub></i> 
+в схеме с ОЭ имеют емкостный характер, поэтому их обычно представляют в виде: </p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:36.0pt'><i>Y<sub>11 </sub>= g<sub>11 </sub>+j<font face="Symbol">&#119;</font> C<sub>11</sub>,          Y<sub>22
+</sub>= g<sub>22 </sub>+ j<font face="Symbol">&#119;</font> C<sub>22</sub></i>,</p>
+
+<p class=MsoNormal>где<i>g<sub>11</sub></i> и <i>g<sub>22</sub></i> -
+активные составляющие соответствующих проводимостей, а <i>C<sub>11</sub></i> и <i>C<sub>22</sub></i> - входная и выходная емкости транзистора (все параметры - в режиме короткого замыкания по выходу или входу).</p>
+
+<p class=MsoNormal style='text-indent:1.0cm'>Крутизну транзистора принято представлять в экспоненциальной форме записи:   <i>Y<sub>21 </sub></i>= | <i>Y<sub>21</sub></i> | <i>exp{ j
+<font face="Symbol">&#106;</font><sub>21</sub>}</i>,       
+где  <i><font face="Symbol">&#106;</font><sub>21</sub></i> – фазовый сдвиг выходного тока транзистора относительно входного напряжения. </p>
+
+<p class=MsoNormal style='text-indent:1.0cm'>Проводимость обратной передачи записывают как в экспоненциальной, так и в алгебраической форме: <i>Y<sub>12 </sub></i>= | <i>Y<sub>12</sub></i> | <i>exp{ j<font face="Symbol">&#106;</font><sub>12 </sub></i>} = <i>g<sub>12&nbsp;</sub></i>+&nbsp;<i>j<font face="Symbol">&#119;</font>C<sub>12</sub></i>.  Смысл величин в этом выражении аналогичен вышеприведенным параметрам.</p>
+
+<p class=MsoNormal style='text-indent:1.0cm'>Разработчики транзисторов в технической документации на изделие приводят <i>физические параметры</i> транзисторов, являющие основой построения  их <i>физических схем замещения</i>. Последние получают на основе теоретического анализа процессов, происходящих в транзисторе. Результатом анализа является теоретическая модель, которую дополняют физическими элементами - объемными сопротивлениями, зарядными емкостями и т.п. Важно, что в отличие от формальной схемы замещения параметры элементов физической схемы не зависят от частоты.<a name="_Toc433109504"> </a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+
+<p class=MsoNormal style='text-align:center;text-indent:1.0cm;margin-bottom:12pt;
+color:olive'><a name="m200"></a><b>Физическая схема замещения полевого транзистора</b>
+<br>
+<b>и ее Y-параметры</b></p>
+
+
+<table cellpadding=0 cellspacing=0 border=0 align=center>
+  <tr>
+  <td><img width=511 height=221 src="lk2.files/image016.gif"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+<p class=MsoNormal style='text-indent:1.0cm'>Из курса электронных приборов известно, что  в широком диапазоне частот физические свойства полевого транзистора хорошо отражает физическая схема замещения, показанная на рис.2.6,а, в которой параллельно включенные проводимости и емкости отражают соответствующие параметры перехода затвор-канал, измеренные со стороны истока и затвора, а сопротивления в цепи стока и истока – объемные
+сопротивления материала соответствующих областей транзистора. В практике
+инженерных расчетов влиянием последних, а также активной составляющей
+проводимости затвор-канал можно пренебречь, в результате чего схема упростится
+(рис.2.6,б). Зависимый генератор тока <i>SU<sub>ЗИ</sub></i> с
+внутренней проводимостью <i>g<sub>СИ</sub></i><sub>  - </sub>теоретическая
+модель полевого транзистора - дополнена лишь двумя элементами - паразитными емкостями
+затвор-исток и затвор-сток. <i>С<sub>ЗИ </sub></i>шунтирует вход транзистора,
+уменьшая его входное сопротивление на высоких частотах. <i>C<sub>ЗС</sub></i>
+создает внутреннюю обратную связь между выходом и входом и также уменьшает
+входное сопротивление. (Напомним, что <i>S</i> – крутизна
+стоко-затворной характеристики).</p>
+
+<p class=MsoNormal style='text-indent:1.0cm'> Найдем <i>Y</i>-параметры схемы. Сравнив ее с формальной схемой замещения (рис.2.2,а), нетрудно убедиться, что они совпадают, т.е.</p>
+
+<p class=MsoNormal style='text-indent:1.0cm'>                 
+– <i>Y<sub>12 </sub></i> = <i>j<font face="Symbol">&#119;</font> C<sub>ЗС</sub></i> ;       <i>Y<sub>11</sub></i> + <i>Y<sub>12</sub></i> = <i>j<font face="Symbol">&#119;</font></i> <i>С<sub>ЗИ</sub></i> ,</p>
+
+<p class=MsoNormal> откуда &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Y<sub>11 </sub></i>= <i>j<font face="Symbol">&#119;</font> ( С<sub>ЗИ </sub>+ C<sub>ЗС </sub>)</i>. </p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Далее                    
+<i>Y<sub>22</sub></i> + <i>Y<sub>12 </sub></i>= <i>g<sub>СИ</sub></i> ,</p>
+
+<p class=MsoNormal> т.е. &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<i>Y<sub>22</sub> = g<sub>СИ</sub></i><i>+ j <font face="Symbol">&#119;</font></i><i> C<sub>ЗС</sub></i><i> ;           Y<sub>21</sub> - Y<sub>12 </sub>= S , </i></p>
+
+<p class=MsoNormal>откуда       <i>Y<sub>21 </sub>= S – j <font face="Symbol">&#119;</font> C<sub>ЗС</sub></i>.</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Следовательно, матрица <i>Y</i>-параметров имеет вид: </p>
+
+<table border=0 width=250 height=50 align=center>
+<tr>
+	<td><img border=0 width=250 height=50 src="lk2.files/image017.gif"></td>
+</tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'> В области низких частот, когда шунтирующим влиянием емкостей можно пренебречь, <i>Y</i>-параметры являются действительными:</p>
+
+<table cellspacing=0 cellpadding=0 align=left border=0>
+ <tr>
+  <td>  <img border=0 width=174  height=99 src="lk2.files/image018.gif">
+  </td>
+<td><img border=0 width=106 height=50 src="lk2.files/image019.gif"></td>
+ </tr>
+</table>
+
+<p class=MsoNormal> В таблице приведены параметры низко- и высокочастотного полевых транзисторов. Поскольку емкость <i>C<sub>ЗС</sub></i>невелика, то даже на сравнительно высоких частотах можно пренебречь прохождением сигнала через нее с входа на выход и считать           <i>Y<sub>21</sub></i> = <i>S – j<font face="Symbol">&#119;</font>C<sub>ЗС</sub> &asymp; S</i>. Следовательно, крутизна полевого транзистора практически <i>не зависит от частоты</i>. Вместе с тем малая емкость <i>С<sub>ЗС</sub></i> существенно влияет на <i>входную емкость </i>нагруженного транзистора. Согласно (2.2)    </p>
+
+<p class=MsoNormal>              <i>Y<sub>ВХ </sub></i>= <i>Y<sub>11</sub></i> + <i>K
+Y<sub>12 </sub>&asymp;</i> <i>j<font face="Symbol">&#119;</font> ( С<sub>ЗИ </sub>+ C<sub>ЗС </sub></i>) – <i>K<sub>0 </sub>(– j<font face="Symbol">&#119;</font> C<sub>ЗС</sub></i>) =</p>
+
+<p class=MsoNormal>                    = <i>j <font face="Symbol">&#119;</font></i> [<i>С<sub>ЗИ</sub>+ (1 + K<sub>0</sub> ) C<sub>ЗС</sub></i>], </p>
+<p class=MsoNormal>
+<table width=100%>
+<tr>
+	<td width=20%><p class=MsoNormal align=center>т.е.</p></td>
+	<td width=60%><p class=MsoNormal  align=left><i>C<sub>ВХ </sub><font face="Symbol">&#187;</font> С<sub>ЗИ</sub>+ (1 + K<sub>0</sub> )C<sub>ЗС</sub></i></p></td>
+	<td width=20%><p class=MsoNormal  align=right>(2.7)</p></td>
+</tr>
+</table>
+
+<p class=MsoNormal style='margin-left:2.25pt'>–
+чем больше коэффициент усиления <i>K<sub>0</sub></i> , тем
+больше входная емкость.</p>
+
+<p class=MsoNormal>С учетом сделанных замечаний схема замещения транзистора будет иметь вид, показанный на рис.2.7,а, ей соответствует матрица <i>Y</i> -параметров </p>
+
+<p class=MsoNormal style='text-indent:36.0pt'>
+
+<table width=100%  cellpadding=0 cellspacing=0 border=0>
+  <tr>
+<td align=center height=60 valign=bottom><img  border=0 width=224 height=50 src="lk2.files/image021.gif"></td>  
+ </tr>
+ <tr>
+<td align=center ><img width=425 height=145 src="lk2.files/image020.gif"></td>
+</tr>
+</table>
+
+<p class=MsoNormal style='text-indent:1.0cm'> Учитывая,
+что   <i>S </i>&equiv;<i> Y<sub>21</sub></i>,    а       
+<i>Y<sub>22</sub></i> = <i>g<sub>22 </sub></i>+ <i>j<font face="Symbol">&#119;</font>
+C<sub>22 </sub></i>= <i>g<sub>СИ</sub> + j<font face="Symbol">&#119;</font> C<sub>ЗС</sub></i>, схема замещения в <i>Y</i>-параметрах показана на рис.2.7,б.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+
+<p class=MsoNormal style='text-align:center;color:olive'><a name="m201"></a><b>Физическая схема замещения биполярного транзистора </b></p>
+<p class=MsoNormal style='text-align:center;margin-bottom:12pt;color:olive'><b>и ее <i>Y</i>-параметры</b></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'>Физические процессы в биполярном транзисторе сложнее, чем в полевом, что определяет трудности получения точных аналитических выражений для их описания. В связи с этим существует значительное количество физических схем замещения, с приемлемой точностью отражающих реальные свойства транзисторов. В <b>методических материалах  для курсовой работы</b>  приведена
+<a href="../kr/krprim2.htm" target="_blank"> методика расчета <nobr>Y-параметров</nobr></a>
+биполярного транзистора использующая параметры <nobr>Т-образной</nobr> физической схемы
+замещения транзистора, приводимые в справочниках. </p>
+<br><br>
+<br><br>
+
+<h1 style='text-align:center;line-height:150%; color:olive'><a name="cq100"></a>Контрольные вопросы</h1>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:
+-17.85pt'>1.&nbsp;Какая система внутренних параметров транзистора как линейного четырехполюсника использовалась в данном разделе ?</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:
+-17.85pt'>2.&nbsp;Какими электрическими величинами являются Y-параметры транзистора ?</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:
+-17.85pt'>3.&nbsp;Поясните физический смысл Y-параметров транзистора.</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:
+-17.85pt'>4.&nbsp;Докажите, что двухгенераторная схема замещения транзистора <a href="javascript:window.open('#mr201','','scrollbars,	resizable,width=750,height=450');void(0);">(рис.2.1)</a> соответствует уравнениям передачи четырехполюсника в Y-параметрах (2.1).</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:
+-17.85pt'>5.&nbsp;Какие проводимости определяют значение комплексного коэффициента усиления каскада, выраженного в Y-параметрах?</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:
+-17.85pt'>6.&nbsp;В каком случае можно пренебречь зависимостью входной проводимости каскада с ОЭ от проводимости нагрузки, а также зависимостью выходной проводимости от внутренней проводимости источника сигнала ?</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:
+-17.85pt'>7.&nbsp;Какая из возможных схем включения транзистора (ОЭ, ОБ, ОК)  позволяет получить наибольший коэффициент усиления по напряжению; обладает минимальной входной проводимостью; обладает минимальной выходной проводимостью ?</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:
+-17.85pt'>8.&nbsp;Какие элементы входят в состав упрощенной физической схемы замещения полевого транзистора и каков их физический смысл ?</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:
+-17.85pt'>9.&nbsp;Почему основное достоинство полевого транзистора перед биполярным – очень большое входное сопротивление – проявляется только в области сравнительно низких частот?</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:
+-17.85pt'>10. Почему усилители, работающие в области умеренно высоких частот, строят преимущественно на биполярных транзисторах ?</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+
+<p class=MsoNormal style='text-align:center;font-size:10.0pt'><b><a href="lknav.htm">Оглавление</a></b></p>
+
+</td></tr></table>
+</td></tr></table>
+
+</body>
+
+</html>

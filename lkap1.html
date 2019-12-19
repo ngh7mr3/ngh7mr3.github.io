@@ -1,0 +1,151 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+
+<title> Приложение 1</title>
+<link rel=stylesheet type=text/css href=images/lk_all.css>
+</head>
+
+<body lang=RU link=blue vlink=purple  bgcolor="#f2fff8">
+
+<table width="100%" height="100%" border="0">
+<tr>
+<td align=center valign=top>
+
+<table width="750"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	<td>
+
+<p class=MsoNormal style='text-align:right;font-size:11.0pt; color:blue'><a href="lknav.htm"><b>Оглавление</b></a></p>
+
+<h1 style='line-height:150%;font-family:"Times New Roman"'>Приложение 1</h1>
+
+<h2 style='text-align:center;line-height:150%;font-size:14.0pt;font-family:"Times New Roman";font-style:normal;color:olive'>П1.1. Анализ температурной нестабильности режима&nbsp; работы<br>биполярного транзистора</h2>
+<br>
+
+
+<p class=MsoNormal style='text-indent:22pt'>Ток коллектора в схеме с ОЭ
+существенно зависит от температуры. Основных причин две. Первая – зависимость
+от температуры тока эмиттера: </p>
+
+<p class=MsoNormal style='text-align:center'><i>I<sub>Э</sub></i>= <i>I<sub>Э0 </sub></i>( <i>exp {e U<sub>БЭ</sub> / kT</i><i>} - 1</i> ),</p>
+
+<p class=MsoNormal>где <i>e</i> -
+заряд электрона, <sub><img border=0 width=33 height=25
+src="lkap1.files/image015.gif"></sub>– напряжение на эмиттерном переходе, <i>k</i>
+- постоянная Больцмана, <i>T</i> -  абсолютная температура; <i>kT/e</i> = <i>&#966;<sub>Т </sub>– температурный потенциал</i>. Ток <i>I<sub>Э0 </sub></i><i>– </i>обратный ток эмиттерного перехода – сильно зависит от температуры:</p>
+
+<p class=MsoNormal style='text-align:center'><i>I<sub>Э0</sub></i> = <i>I<sub>НАС</sub> exp { -E /&#966;<sub>Т </sub>}</i>. </p>
+
+<table  border=0 cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img border=0 width=239 height=235 src="lkap1.files/image016.gif"></td>
+  </tr>
+  <tr align=center>
+  <td><p class=MsoNormal style='text-align:center'>Рис.П1.1</p></td>
+ </tr>
+</table>
+
+<p class=MsoNormal>Здесь <i>I<sub>НАС </sub></i>– &nbsp;ток
+насыщения, который протекал бы через переход при нулевом потенциальном барьере;
+<i>E</i> – ширина запрещенной зоны. Повышение температуры приводит к росту тока эмиттера, а следовательно, и тока коллектора. Это видно из рис.П1.1, если зафиксировать <i>U<sub>БЭ</sub></i>. Ток коллектора останется неизменным, если с ростом температуры уменьшать <i>U<sub>БЭ</sub></i>, что также видно из рисунка. Для практики важно, что рост температуры приводит к параллельному сдвигу вольт-амперных характеристик влево. Это дает возможность учесть температурную нестабильность с помощью <i>коэффициента температурного сдвига</i> характеристик: </p>
+
+<p class=MsoNormal style='text-align:center'><i>&#947;</i><i><sub>Т</sub></i> =<i>&#8706;U<sub>БЭ</sub> / &#8706;T &#8776;</i> (<i>E</i> – <i>U<sub>БЭ</sub></i> )<i> / T</i> = – (<i>2...3 </i>) мВ / град.</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>Таким образом, изменение температуры эмиттерного перехода эквивалентно изменению напряжения смещения на базе &#916;<i>U<sub>Б </sub></i><sub>т</sub> = <i>&#947;<sub>Т </sub></i>&#916;<i>T</i>.&nbsp;&nbsp;Это позволяет&nbsp; условно ввести в цепь базы эквивалентный генератор напряжения &#916;<i>U<sub>Б </sub></i><sub>т</sub>, учитывающий температурную нестабильность тока коллектора.</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>Вторая
+причина температурной нестабильности – влияние температурных изменений
+обратного тока коллектора <i>I<sub>К0</sub></i>. Они невелики
+по абсолютной величине, однако, протекая в цепи базы, дают изменение
+падения напряжения на резисторах в базовой цепи, которое затем усиливается
+транзистором. Приращение тока <i>I<sub>К0 </sub></i>составляет
+2...2,5 раза на каждые 10 градусов. В справочниках приводится значение тока <i>I<sub>К0</sub></i> при некоторой температуре <i>T<sub>0</sub></i>. Значение
+тока при другой температуре <i>T</i> можно найти по формуле:</p>
+
+<p class=MsoNormal style='text-align:center'><i>I<sub>К0 </sub></i>(<i>T</i> ) = <i>I<sub>К0 </sub></i>( <i>T<sub>0 </sub></i>)( <i>exp{a</i> ( <i>T</i> - <i>T<sub>0</sub></i> )<i>} -
+1</i>),</p>
+
+<p class=MsoNormal>&nbsp;где <i>a</i> <font face="Symbol">&#64;</font> 0,06
+для кремниевых транзисторов.</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>Температурная нестабильность токов транзистора позволяет говорить об их приращениях как о переменных токах, изменяющихся с очень низкой частотой. По этой причине для анализа процессов может быть использована схема замещения транзистора с использованием низкочастотных <i>Y</i>-параметров.
+Удобно использовать схему замещения рис.2.8,б, которая справедлива как для
+полевого, так и для биполярного транзистора, причем для последнего на низкой
+частоте&nbsp;&nbsp; <i>Y<sub>21</sub></i> = <i>S</i>, с учетом (2.3)</p>
+
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr>
+<td width=90%><p class=MsoNormal style='text-align:center'><i>Y<sub>ВХ </sub></i>= <i>g<sub>ВХ</sub></i> = <i>g<sub>11н</sub></i>+ <i>K<sub>0</sub></i> <i>g<sub>12 </sub></i><font face="Symbol">&#64;</font> <i>g<sub>11Н</sub></i></p><td>
+<td width=10%><p class=MsoNormal style='text-align:right'>(П1.1)</p></td>
+</tr>
+</table>
+<br>
+<p class=MsoNormal>- ввиду малости <i>g<sub>12</sub></i>. Кроме того, <i>Y<sub>22 </sub></i><font face="Symbol">&#64;</font> <i>g<sub>22</sub></i>. Полученная с учетом этого схема замещения транзистора показана на рис.П1.2. В ней также учтены два источника температурной нестабильности в виде генератора напряжения &#916;<i>U<sub>Б</sub></i><sub>т </sub>(первая причина), включенного в базовой цепи, и генератора тока &#916;<i>I<sub>К0 </sub></i>(вторая причина), включенного между базой и коллектором. Резистор <i>R<sub>ВН </sub></i>отражает общее сопротивление внешних резисторов, <i><sub>&nbsp;</sub></i>подключенных к базе, по переменному току.</p> 
+
+<table border=0 width=280 cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img border=0 width=264 height=181 src="lkap1.files/image018.gif">
+  </td></tr>
+ <tr><td>
+<p class=MsoNormal style='text-align:center'>Рис.П1.2</p></td>
+ </tr>
+</table>
+
+<p class=MsoNormal>Температурную нестабильность коллекторного тока отражает&nbsp;генератор тока &#916;<i>I<sub>К </sub></i>= <i>S</i>&#916;<i>U<sub>Б</sub></i>, где (с учетом нулевого внутреннего сопротивления генератора напряжения  &#916;<i>U<sub>Б </sub></i><sub>т </sub>и нулевой внутренней проводимости ГТ &#916;<i>I<sub>К0</sub></i>)</p>
+
+<p class=MsoNormal style='text-align:center'><sub><img
+border=0 width=316 height=47 src="lkap1.files/image019.gif"></sub></p>
+
+<p class=MsoNormal>&nbsp;Следовательно,</p>
+
+<p class=MsoNormal style='text-align:center'><sub><img
+border=0 width=433 height=45 src="lkap1.files/image020.gif"></sub></p>
+
+<p class=MsoNormal style='text-indent:22pt'>При <i>R</i><sub>ВН </sub>&#8594; &#8734; (близко к случаю смещения фиксированным током базы) влияние &#916;<i>U<sub>Б </i>т </sub>минимально, т.е. &#916;<i>I<sub>К1</sub></i> = 0, зато &#916;<i>I<sub>К2</sub></i> = &#916;<i>I<sub>К2max</sub></i> &nbsp;и</p>
+
+<p class=MsoNormal style='text-align:center'>&#916;<i>I<sub>К</sub></i>
+=&nbsp; &#916;<i>I<sub>К2max</sub></i>&nbsp; = <i>S</i>&nbsp; &#916;<i>I<sub>К0</sub> / g<sub>11</sub></i> = <i>&#946;<sub>0</sub></i>&nbsp; &#916;<i>I<sub>К0</sub></i>.</p>
+
+<p class=MsoNormal style='text-indent:22.0pt'>&nbsp;Наоборот,
+при <i>R<sub>ВН</span></sub></i> &#8594; 0
+(близко к случаю смещения фиксированным напряжением на базе) минимально влияние
+&nbsp;&#916;<i>I<sub>К0</sub></i>, &#916;<i>I<sub>К2</sub></i> = 0, а &#916;<i>I<sub>К1</sub></i><i> = </i>&#916;<i>I<sub>К1max</sub></i>
+<i>&nbsp;</i>и &#916;<i>I<sub>К</sub></i> = &#916;<i>I<sub>К1max</sub></i>
+=<i>S</i>&#916;<i>U<sub>Б </i>т</sub>. Вообще говоря, обе рассмотренные простейшие схемы с точки зрения температурной стабильности малоэффективны.</p>
+
+<p class=MsoNormal style='text-indent:1.0cm'>Способность схемы обеспечивать температурную стабильность режима оценивается <i>коэффициентами стабилизации S<sub>Т1</sub></i>, <i>S<sub>Т2, </sub></i>при этом </p>
+
+<p class=MsoNormal style='text-align:center'>&#916;<i>I<sub>К</sub></i><i>
+=&nbsp; </i>&#916;<i>I<sub>К1</sub></i> + &#916;<i>I<sub>К2 </sub></i>= <i>S<sub>Т1 </sub></i>&nbsp;&#916;<i>I<sub>К1max</sub></i>+ <i>S<sub>Т2 </sub></i>&nbsp;&#916;<i>I<sub>К2max</sub></i>,</p>
+
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr>
+<td width=10%><p class=MsoNormal style='text-align:left'>т.е.</p><td>
+<td width=90%><p class=MsoNormal style='text-align:center'><i>S<sub>Т1</sub></i> = &#916;<i>I<sub>К1 </sub>/ </i>&#916;<i>I<sub>К1max</sub></i>;  &nbsp;<i>S<sub>Т2</sub></i>
+=&nbsp; &#916;<i>I<sub>К 2&nbsp; </sub>/ </i>&#916;<i>I<sub>К 2max</sub></i>.</p></td>
+</tr>
+</table>
+<br>
+
+<p class=MsoNormal style='text-indent:21,3pt'>&nbsp;Рассчитав
+значения <i>S<sub>Т1</sub></i>, <i>S<sub>Т2</sub></i> для
+конкретной схемы температурной стабилизации, далее можно найти общую
+температурную нестабильность тока коллектора:</p>
+
+<p class=MsoNormal style='text-align:center'>&#916;<i>I<sub>К</sub></i> = <i>S</i> &#916;<i>U<sub>Б </i>т</sub> <i>S<sub>Т1</sub></i> + <i>&#946;<sub>0</sub></i><i>&nbsp;</i><i>
+</i>&#916;<i>I<sub>К0</sub></i> <i>S<sub>Т2</sub></i>.</p>
+
+<p align=center>
+<a href="#top">
+<img border=0 width=16 height=16
+src="../images/arrow_up.gif" alt="В начало страницы"></a>
+</p>
+
+</td></tr></table>
+</td></tr></table>
+
+</body>
+
+</html>
