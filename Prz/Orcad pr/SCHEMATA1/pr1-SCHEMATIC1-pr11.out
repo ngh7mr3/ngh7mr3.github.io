@@ -1,0 +1,87 @@
+
+**** 06/02/05 13:42:43 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-pr11"  [ C:\Program Files\Orcad\Capture\Projects\SCHEMATA1\pr1-SCHEMATIC1-pr11.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pr1-SCHEMATIC1-pr11.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 5.5 4.5 0.01 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\pr1-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING pr1-SCHEMATIC1.net ****
+* source PR1
+Q_Q1         N00237 N00286 N00450 KT3102 
+Q_Q2         N00286 N00286 N00315 KT3102 
+R_R1         N00375 N00450  450  
+R_R2         N00375 N00315  210  
+R_R3         N00286 N00237  9.3k  
+V_V1         N00237 0 5Vdc
+V_V2         0 N00375 5Vdc
+
+**** RESUMING pr1-SCHEMATIC1-pr11.sim.cir ****
+.END
+
+**** 06/02/05 13:42:43 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-pr11"  [ C:\Program Files\Orcad\Capture\Projects\SCHEMATA1\pr1-SCHEMATIC1-pr11.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               KT3102          
+               NPN             
+          IS    5.911000E-15 
+          BF  809.9          
+          NF    1            
+         VAF   62.37         
+         IKF     .01426      
+         ISE    5.911000E-15 
+          NE    1.358        
+          BR    1.287        
+          NR    1            
+          RB   10            
+          RC    1.61         
+         CJE    4.973000E-12 
+         MJE     .42         
+         CJC    4.017000E-12 
+         MJC     .32         
+          TF  820.900000E-12 
+         XTF    7            
+         VTF    4            
+         ITF     .35         
+          TR    4.680000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .05
+

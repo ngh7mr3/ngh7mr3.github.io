@@ -1,0 +1,112 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+
+<title> Приложение 4</title>
+<link rel=stylesheet type=text/css href=images/lk_all.css>
+
+</head>
+
+<body lang=RU link=blue vlink=purple  bgcolor="#f2fff8" style='margin-left:18.0pt;margin-top:6.0pt;
+margin-right:18.0pt;margin-bottom:6.0pt'>
+
+<table width="100%" height="100%" border="0">
+<tr>
+<td align=center valign=top>
+
+<table width="750"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	<td>
+
+<p class=MsoNormal style='text-align:right;font-size:
+11.0pt;'><a href="lknav.htm"><b>Оглавление</b></a></p>
+
+<h1 style='line-height:150%;font-family:"Times New Roman"'>Приложение 4</h1>
+
+<p class=MsoNormal style='text-align:center; margin-bottom:18pt;margin-top:12pt'><b><span
+style='font-size:16.0pt;color:olive'>П4.1 Коррекция частотных характеристик<br>
+в области верхних частот. Метод Брауде</span></b></p>
+
+<p class=MsoNormal style='text-indent:1.0cm'>Рассмотрим <i>метод Брауде</i>, позволяющий оптимальным образом подобрать нагрузку, чтобы обеспечить необходимую коррекцию АЧХ либо ФЧХ. Известно, что в общем случае квадрат АЧХ реальных АУ можно выразить в виде отношения двух многочленов</p>
+
+<p class=MsoNormal style='text-align:center'>
+<sub><img border=0 width=328 height=56 src="lkap4.files/image002.gif"></sub></p>
+
+<p class=MsoNormal>причем
+в реальных устройствах с конечной полосой пропускания всегда <nobr><i>m</i> &lt; <i>n</i></nobr>. В идеале <sub><img border=0 width=203 height=28 src="lkap4.files/image025.gif"></sub> Смысл коррекции: обеспечить <i>равномерность </i>АЧХ, либо <i>линейность </i>ФЧХ (рис.П4.1). Как будет показано, это задачи разные и одновременно не решаются. Согласно методу Г.В.Брауде АЧХ и ФЧХ представляются в виде рядов Маклорена (разложение в ряд вблизи частоты <i>&#969;</i> =<i> 0</i>):</p>
+
+<table border=0 cellpadding=6 cellspasing=0 width=100% align=center>
+<tr>
+<td width=90% align=center>
+<img border=0 width=359 height=55 src="lkap4.files/image026.gif">
+</td>
+<td width=10% rowspan=2>
+<p class=MsoNormal style='text-align:center'>(П4.1)</p>
+</td>
+</tr>
+<tr>
+<td align=center>
+<img border=0 width=285 height=52 src="lkap4.files/image027.gif">
+</td>
+</tr>
+</table>
+<br>
+
+<table border=0 cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img border=0 width=210 height=229 src="lkap4.files/image028.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:1.0cm'>&nbsp;Слагаемое <i>M</i>(0) </i>&nbsp;в (П4.1) описывает идеальную АЧХ (рис.П4.1), а остальные – отклонение от нее. Если параметры цепи выбрать так, чтобы </p>
+
+<p class=MsoNormal style='text-align:center'><i>dM</i>(<i>&#969;</i>) <i>/d</i><i>&#969;</i> = <i>d<sup>2</sup>M</i>(<i>&#969;</i>) /<i>d&#969;<sup>2</sup></i>=...=
+<i>0</i>,</p>
+
+<p class=MsoNormal>то чем больше производных обратить в ноль, тем ближе АЧХ к равномерной.</p>
+
+<p class=MsoNormal style='text-indent:1.0cm'>Отклонение ФЧХ от линейной (идеальной) оценивается производными, начиная со второй. Условие коррекции ФЧХ:</p>
+
+<p class=MsoNormal style='text-align:center'><i>d<sup>2</sup></i><i>&#966;</i>
+(<i>&#969;</i>) /<i>d</i><i>&#969;</i><i><sup>2</sup></i>= <i>d<sup>3</sup>&#966;</i>(<i>&#969;</i>) /<i>d&#969;<sup>3</sup></i>=...=<i>0</i>.
+</p>
+
+<p class=MsoNormal style='text-indent:1.0cm'>Число обращаемых в нуль производных определяется количеством независимых регулируемых параметров цепи.</p>
+
+<p class=MsoNormal style='text-indent:1.0cm'>Для эффективной коррекции нужно обнулять производные, начиная с более низких порядков, поскольку их влияние существенней.</p>
+
+<p class=MsoNormal style='text-indent:1.0cm'>Если АЧХ, представленную в виде квадрата модуля, приравнять квадрату выражения (П4.1), то</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:1.0cm'><sub><img
+border=0 width=556 height=59 src="lkap4.files/image029.gif"></sub>&nbsp;&nbsp;
+откуда</p>
+<br>
+<p class=MsoNormal style='text-align:center'><sub><img
+border=0 width=552 height=75 src="lkap4.files/image030.gif"></sub></p>
+<br>
+<p class=MsoNormal>Поскольку <i>M<sup>2</sup>(0) =1</i>,
+приравнивая члены при одинаковых степенях, получим условия коррекции: <sub><img
+border=0 width=163 height=27 src="lkap4.files/image031.gif"></sub>&nbsp;&nbsp;и
+т.д., то есть <sub><img border=0 width=53 height=21
+src="lkap4.files/image032.gif"></sub>&nbsp;<sub><img border=0 width=12
+height=21 src="lkap4.files/image033.gif"><img border=0 width=57 height=21
+src="lkap4.files/image034.gif"></sub>&nbsp;&nbsp;&nbsp;&nbsp;<sub><img
+border=0 width=59 height=21 src="lkap4.files/image035.gif"></sub>&nbsp;(<i>m</i><i>&lt;</i><i>n</i><i>
+</i>- идеальная коррекция во всем диапазоне частот невозможна.</p>
+
+<p class=MsoNormal style='text-indent:1.0cm'>Аналогично условия коррекции ФЧХ находят приравниванием нулю производных, начиная со второй. Поскольку уравнения оптимальных АЧХ и ФЧХ различны, то и параметры схем, им соответствующие, тоже разные, т.е. условия коррекции АЧХ и ФЧХ не совпадают.</p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+
+</td></tr></table>
+</td></tr></table>
+
+</body>
+
+</html>

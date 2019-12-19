@@ -1,0 +1,634 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<title>Раздел 4</title>
+<link rel=stylesheet type=text/css href=images/lk_all.css>
+</head>
+
+<body lang=RU link=blue vlink=purple bgcolor="#fafffc">
+
+<table width="100%" height="100%" border="0">
+<tr>
+<td align=center valign=top>
+
+<table width="750"  border="0" cellpadding="0" cellspacing="0">
+    <tr>
+    <td>
+
+<p class=MsoNormal style='margin-top:12pt;text-align:right;font-size:12pt'><a href="lknav.htm"><b>Оглавление</b></a></h1>
+
+<h1 style='margin-bottom:12.0pt;text-align:center;line-height:
+150%;font-size:16.0pt;
+font-family:"Times New Roman";color:olive'><a name="_Toc433109520"></a>4. Отрицательная обратная связь в апериодических<br>
+ усилителях</h1>
+
+<p class=page_content>
+    <a class=doc_menu href="#_Toc433109521">4.1. Структурные схемы усилителей с
+обратной связью.</a><br>
+    <a class=doc_menu href="#_Toc433109522">4.2. Усилитель с ОС по напряжению.</a><br>
+        
+    <a class=doc_menu href="#_Toc433109523">4.3. Усилитель с ОС по току.</a><br>
+    <a class=doc_menu href="#_Toc433109524">4.4. Входная проводимость усилителей с ОС.</a><br>
+        
+    <a class=doc_menu href="#_Toc433109525">4.5. Эмиттерный и истоковый
+повторители .</a><br>
+        <a class=doc_menu href="#m400"><span style='margin-left: 40'>Эмиттерный повторитель.</span></a><br>
+        <a class=doc_menu href="#m401"><span style='margin-left: 40'>Истоковый повторитель.</span></a><br>
+    <a class=doc_menu href="#_Toc433109526">4.6. Усилитель с последовательной ООС по току.</a><br>
+    
+    <a class=doc_menu href="#cq100">Контрольные вопросы.</a><br>
+
+</p>
+
+<p class=MsoNormal style='text-indent:36.0pt'>Обратная связь (ОС) - это передача энергии с выхода усилительного устройства на его вход. Для передачи энергии используется элемент обратной связи (рис.4.1) с передаточной функцией &nbsp;&nbsp;&nbsp;&nbsp;<i>&#946;</i>(<i>j&#969;</i>)=<i>U<sub>ос</sub></i> /<i>U<sub>вых</sub></i>. </p>
+
+<table border=0 width=221 height=158 cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img border=0 width=221 height=158 src="lk4.files/image001.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal> Напряжение на входе усилителя</p>
+
+<p class=MsoNormal style='text-indent:4cm'><img border=0 width=232 height=25 src="lk4.files/image003.gif"></p>
+
+<p class=MsoNormal> Напряжение на выходе </p>
+
+<p class=MsoNormal style='text-indent:4cm'> <img
+border=0 width=225 height=35 src="lk4.files/image004.gif">,</p>
+
+<p class=MsoNormal> откуда получим выражение для комплексного коэффициента передачи усилителя, охваченного ОС</p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=233 height=35 src="lk4.files/image005.gif"></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'>Здесь произведение  <sub><img border=0 width=31 height=25 src="lk4.files/image006.gif"></sub> –так называемое <i>петлевое усиление</i>. В усилителях в большинстве случаев используют <i>отрицательную </i>ОС (ООС). При этом напряжения от источника сигнала и с выхода цепи ОС находятся в противофазе:</p>
+
+<p class=MsoNormal style='text-align:center;margin-bottom:12pt'> <i>U</i>=<i>U<sub>ВХ </sub>&#8722;</i> <i>U<sub>ОС</sub></i>.</p>
+
+<p class=MsoNormal style='text-indent:36.0pt'>Поскольку &nbsp;&nbsp;&nbsp;&nbsp;<sub><img
+border=0 width=147 height=24 src="lk4.files/image007.gif"></sub>, &nbsp;&nbsp;то</p>
+
+<p class=MsoNormal style='text-indent:5cm'> <sub><img border=0 width=131 height=28 src="lk4.files/image008.gif"></sub>,       
+и             <sub><img border=0 width=72 height=29 src="lk4.files/image009.gif"></sub>.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>В общем случае ООС применяется для улучшения характеристик усилителей. Ее ценным качеством является улучшение равномерности АЧХ (если <i>&#946;</i> является величиной, не зависящей от частоты). Кроме этого, уменьшаются нелинейные искажения, поскольку высшие гармоники входного сигнала, возникающие из-за нелинейности вольт-амперных характеристик приборов, ослабляются пропорционально модулю знаменателя передаточной функции.</p>
+
+<p>&nbsp;</p>
+
+<h2 align=center style='margin-bottom:12.0pt;text-align:center;line-height:
+150%;font-size:16.0pt;font-family:"Times New Roman";color:maroon'><a name="_Toc433109521"></a>4.1. Структурные схемы усилителей с обратной связью</h2>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Структурные схемы усилителей с ОС зависят от типа ОС. Если сигнал, подаваемый в цепь ОС, пропорционален выходному напряжению, то говорят, что имеет место ОС <i>по напряжению</i>, если он пропорционален выходному току, то это ОС<i> по току</i>.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'> Во входную цепь усилителя сигнал ОС можно вводить, суммируя напряжение ОС с напряжением сигнала – так называемая <i>последовательная </i>ОС. Можно суммировать ток ОС с током сигнала – получим <i>параллельную </i>ОС.</p>
+<br>
+
+<table border=0 width=551 height=345 cellspacing=0 cellpadding=0 align=center>
+ <tr>
+  <td><img border=0 width=551 height=345 src="lk4.files/image010.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Различные условия получения сигнала ОС и способа ввода его во входную цепь усилителя дают четыре основных разновидности схем с ОС (рис.4.2). Каждая из четырех разновидностей схем по-своему влияет на результирующие свойства и внешние характеристики усилителя, охваченного ОС. При этом <i>выходные</i> параметры усилителя зависят только от <i> способа формирования</i> сигнала ОС, а <i>входные</i> - только от <i>способа ввода</i> его во входную цепь. Далее эти положения рассмотрены подробнее.</p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+
+<h2 align=center style='margin-bottom:18.0pt;text-align:center;line-height:
+150%;font-size:16.0pt;font-family:"Times New Roman";color:maroon'><a name="_Toc433109522"></a>4.2.Усилитель с ОС по напряжению</h2>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 align=left>
+ <tr>
+  <td><img border=0 width=288 height=201 src="lk4.files/image011.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:left;text-indent:10pt'>Структурная схема усилителя показана на рис.4.3. Напряжение <i>U<sub>ОС </sub></i> пропорционально <span style='font-size:12.0pt;'><i>U<sub>ВЫХ</sub></i></span> : &nbsp;&nbsp;&nbsp;<sub><img border=0 width=101 height=24 src="lk4.files/image012.gif"></sub></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Признаки ОС по напряжению: при холостом ходе на выходе <i>U<sub>ОС</sub> &#8800</i><i> 0</i>, при коротком замыкании <i>U<sub>ОС</sub></i> = 0. </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Учитывая согласное направление выходного тока и напряжения на рис.4.3, можно записать, что без ОС</p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=208 height=28 src="lk4.files/image013.gif">.</p>
+
+<p class=MsoNormal>Отсюда             <sub><img border=0 width=287 height=59 src="lk4.files/image014.gif"></sub> </p>
+<br>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Учитывая,
+что  &nbsp;<sub><img border=0 width=101 height=24 src="lk4.files/image012.gif"></sub>, 
+получим </p>
+
+<p class=MsoNormal style='text-align:center'> 
+<img border=0 width=239 height=35 src="lk4.files/image015.gif">.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'> Отсюда комплексный коэффициент усиления усилителя, охваченного обратной связью:</p>
+
+<table border=0 width=100% height=57>
+<tr>
+<td width=90% align=center><img border=0 width=523
+height=57 src="lk4.files/image016.gif"></td>
+<td width=10%><p class=MsoNormal style='text-align:right'>(4.1)</p></td>
+</tr>
+</table>
+<br>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Здесь обозначено               <i>K&#176;</i>=<i>Y<sub>21 </sub></i>/<i>Y<sub>22</sub></i>                     при <i>U<sub>ВЫХ</sub></i> = 0</p>
+
+<p class=MsoNormal> –внутренний коэффициент усиления прибора. Записав в общем виде </p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=177 height=28 src="lk4.files/image017.gif"></p>
+
+<p class=MsoNormal>и сравнив с предыдущим выражением, можно заметить, что <i>Y</i>-параметры усилителя с ОС по напряжению</p>
+
+<p class=MsoNormal>                           <i>Y<sub>21ос</sub></i>= <i>Y<sub>21</sub></i>,          
+<i>Y<sub>22ос</sub></i>= <i>Y<sub>22</sub></i>(1–<i>&#946;K&#176;</i>).</p>
+
+<p class=MsoNormal style='margin-bottom:18.0pt'> Таким образом, крутизна не изменяется, а выходная проводимость в случае ООС возрастает, поскольку <i>&#946;</i> = –<i>&#946;</i>  и <i>Y<sub>22ос</sub></i>= <i>Y<sub>22</sub></i>(1+<i>&#946;K&#176;</i>).
+Отсюда следует, что при ООС по напряжению  <sub><img border=0 width=75
+height=29 src="lk4.files/image018.gif"></sub></p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+
+<h2 align=center style='margin-top:24.0pt;margin-bottom:12.0pt;
+text-align:center;line-height:150%;font-size:16.0pt;font-family:"Times New Roman";
+color:maroon'><a name="_Toc433109523"></a>4.3. Усилитель с ОС по току</h2>
+
+<table cellspacing=0 cellpadding=0  align=left>
+ <tr>
+  <td><img border=0 width=301 height=192 src="lk4.files/image019.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:left;text-indent:6pt'>Структурная схема усилителя показана на рис.4.4. Напряжение <i>U<sub>ОС</sub></i> пропорционально выходному току:</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'> <i>U<sub>ОС</sub></i>=<i>&#946;<sub>Т </sub>I<sub>ВЫХ</sub>Z<sub>ОС</sub></i>.</p>
+
+<p class=MsoNormal>С учетом обозначений раздела 4.2 </p>
+
+<p class=MsoNormal><i>&#946;</i> =<i>U<sub>ос</sub></i>/<i>U<sub>вых</sub></i>, следовательно,</p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=219 height=59 src="lk4.files/image020.gif">.</p>
+
+<p class=MsoNormal>Основной признак ОС по току: при коротком замыкании нагрузки <i>U<sub>ОС </sub></i>&#8800; 0, если же нагрузку разомкнуть, <i>U<sub>ОС </sub></i>= 0.</p>
+
+<table border=0 width=118 height=129 cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img border=0 width=118 height=129 src="lk4.files/image021.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Обычно на практике <sub><img border=0 width=100 height=28 src="lk4.files/image022.gif"></sub>. Это позволяет пересчитать генератор выходного тока в генератор напряжения и, присуммировав <i>Z<sub>ОС </sub></i> к его
+внутреннему сопротивлению, вновь пересчитать схему в генератор тока (рис.4.5),
+имеющий выходную проводимость  <sub><img border=0 width=153 height=28 src="lk4.files/image023.gif"></sub>.  Следовательно, выходная часть структурной схемы аналогична рис.4.3. Справедливо и выражение (4.1), если заменить в нем <i>Y<sub>22</sub></i> на <i>Y<sub>ВЫХ</sub></i>, а <i>&#946;</i><i> </i>выразить через <i>&#946;<sub>Т</sub></i>:</p>
+
+<table border=0 width=100% height=128 align=center>
+<tr>
+<td width=90% align=center> <img border=0 width=436 height=128 src="lk4.files/image024.gif">
+</td>
+<td width=10%><p class=MsoNormal style='text-align:right'>(4.2)</p>
+</td>
+</tr>
+</table>
+
+<p class=MsoNormal>Отсюда при ОС по току</p>
+
+<p class=MsoNormal'>        <i>Y<sub>21ос</sub></i>=<i>Y<sub>21</sub></i> /(1-<i>&#946;<sub>Т</sub>Z<sub>ОС</sub>Y<sub>21</sub></i>);              <i>Y<sub>22ос</sub></i>=<i>Y<sub>ВЫХ </sub></i>/(1-<i>&#946;<sub>Т</sub>Z<sub>ОС</sub>Y<sub>21</sub></i>).</p>
+
+<p class=MsoNormal style='margin-bottom:24.0pt'>Таким образом, при ООС (<i>&#946;<sub>Т</sub></i>= –<i>&#946;<sub>Т</sub></i>) и крутизна, и выходная проводимость уменьшаются.</p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+
+<h2 align=center style='margin-top:24.0pt;margin-bottom:12.0pt;
+margin-left:0cm;text-align:center;line-height:150%;font-size:16.0pt;font-family:"Times New Roman";
+color:maroon'><a name="_Toc433109524"></a>4.4. Входная проводимость усилителей с ОС</h2>
+
+<table border=0 width=247 height=184 cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img border=0 width=247 height=184 src="lk4.files/image025.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Входная проводимость усилителя, охваченного ОС, определяется способом ввода сигнала ОС во входную цепь усилителя. Рассмотрим вариант с <i>последовательной ОС</i> (рис.4.6). Замыкание источника сигнала при таком виде ОС не приводит к ее исчезновению. Напротив, размыкание источника приводит к исчезновению ОС.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'> Из рисунка следует, что &nbsp; &nbsp;&nbsp;&nbsp; <i>U</i> = <i>U<sub>ВХ</sub></i>+<i>U<sub>ОС</sub></i>.</p>
+
+<p class=MsoNormal> Входная проводимость усилителя с ОС</p>
+
+<p class=MsoNormal style='text-align:center;text-indent:35.45pt'><sub><img
+border=0 width=381 height=51 src="lk4.files/image026.gif"></sub><sup>,</sup></p>
+
+<p class=MsoNormal>где <i>Y<sub>ВХ</sub></i> – входная проводимость усилителя без ОС. При последовательной отрицательной ОС входная проводимость уменьшается:</p>
+
+<p class=MsoNormal><sub>                     
+<img border=0 width=148 height=28 src="lk4.files/image027.gif"></sub>,&nbsp;&nbsp; т.е. растет входное сопротивление.</p>
+
+<table border=0 width=256 height=176 cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img border=0 width=256 height=176 src="lk4.files/image028.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style=text-indent:35.45pt'>Признаки <i>параллельной</i>  ОС (рис.4.7) с точностью до наоборот соответствуют последовательной ОС. На входе происходит суммирование токов источника сигнала и цепи обратной связи</p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=252 height=65 src="lk4.files/image029.gif"></p>
+
+<p class=MsoNormal style='text-align:center;text-indent:5 cm'><sub><img border=0 width=263 height=35 src="lk4.files/image030.gif"></sub>,</p>
+
+<p class=MsoNormal>где      
+<sub><img border=0 width=169 height=35 src="lk4.files/image031.gif"></sub>.</p>
+
+<p class=MsoNormal> Таким образом, при параллельной ОС входная проводимость растет (входное сопротивление падает).</p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+
+<h2 align=center style='margin-bottom:18.0pt;text-align:center;line-height:
+150%;font-size:16.0pt;font-family:"Times New Roman";color:maroon'><a name="_Toc433109525"></a>4.5. Эмиттерный и истоковый повторители</h2>
+
+<table border=0 width=197 height=210 cellspacing=0 cellpadding=0  align=left>
+ <tr>
+  <td><img border=0 width=197 height=210 src="lk4.files/image032.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'><span style='
+color:green'><a name="m400"></a>Эмиттерный повторитель</span> (ЭП) – это каскад с <i>общим
+коллектором</i>, охваченный 100%-й (<i>&#946;</i> = –<i>1) последовательной
+</i>ООС <i>по напряжению </i>(рис.4.8). Покажем, что это так, представив схему в виде
+двух четырехполюсников и учитывая только цепи, по которым протекает переменный
+ток (рис.4.9). Сопротивление нагрузки, как и в схеме с ОЭ, по переменному току
+включено между коллектором и эмиттером, однако по переменному току через
+пренебрежимо малое сопротивление источника питания заземлен коллектор.</p>
+
+<table border=0 width=252 height=204 cellspacing=0 cellpadding=0  align=left>
+ <tr>
+  <td><img border=0 width=252 height=204 src="lk4.files/image033.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'> Для входной цепи справедлива запись <sub><img border=0 width=111 height=23 src="lk4.files/image034.gif"></sub>, для выходной: <sub><img
+border=0 width=103 height=23 src="lk4.files/image035.gif"></sub>.</p>
+
+<p class=MsoNormal> Отсюда, во-первых, очевидно, что <nobr><sub><img border=0 width=107 height=24 src="lk4.files/image036.gif"></sub>= –<i>1.</nobr> </i>Во-вторых, поскольку
+выходное и входное напряжения в схеме с ОК совпадают по фазе, можно записать
+для амплитуд (не комплексных)  <i>U</i> = <i>U<sub>ВХ</sub></i> – <i>U<sub>ВЫХ</sub></i>. Поскольку амплитуда <i>U &gt; 0</i>, очевидно, что коэффициент передачи ЭП   <i>K<sub>П</sub>&nbsp;=&nbsp;U<sub>ВЫХ</sub>&nbsp;/&nbsp;U<sub>ВХ</sub>&nbsp;&lt;&nbsp;1</i>. Таким образом, действие обратной связи проявляется в том, что транзистор по
+промежутку база - эмиттер управляется напряжением малой амплитуды <i>U &lt;&lt;
+U<sub>ВХ </sub></i>.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Воспользовавшись результатами анализа раздела 4.2, запишем: </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'> <sub><img border=0 width=408 height=33 src="lk4.files/image037.gif"></sub>.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Здесь учтено, что <i>K&#176;</i>=<i>Y<sub>21</sub></i>/<i>Y<sub>22</sub></i>. Следовательно,
+коэффициент передачи ЭП:</p>
+
+<p class=MsoNormal style='text-align:center;margin-bottom:6pt'><img
+border=0 width=328 height=47 src="lk4.files/image038.gif">.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>В области средних частот <i>Y<sub>21</sub></i> = <i>S</i>, следовательно, здесь</p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=151 height=28 src="lk4.files/image039.gif">  .</p>
+
+<p class=MsoNormal'>Следует учесть, что без обратной связи коэффициент усиления был бы равен <i>K&#176;</i> = <i>SR<sub>Н</sub></i>. За счет обратной связи он уменьшается в  <i>F</i>= 1+<i>SR<sub>Н  </sub></i> раз, где <i>F</i> - глубина ОС.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>У биполярного транзистора велика крутизна, поэтому <i>SR<sub>Н</sub>&gt;&gt;1, </i> следовательно, <i>K<sub>П0 </sub>&#8776; 1.</i> Отсюда название - «повторитель». В области нижних частот соотношения для коэффициента
+передачи ЭП аналогичны схеме с ОЭ. Вместе с тем падение постоянного напряжения
+на <i>R<sub>Н</sub></i> сравнительно невелико, что позволяет производить непосредственную связь каскадов. При этом <i>K<sub>Пн</sub></i>= <i>K<sub>П0</sub></i>.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><span style='
+color:green'>Входная проводимость</span> при последовательной ООС (раздел 4.4): <sub><img border=0 width=148 height=28 src="lk4.files/image027.gif"></sub>. В области нижних и средних частот входная проводимость чисто активна:</p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=417 height=32 src="lk4.files/image040.gif">.</p>
+
+<p class=MsoNormal> При малом <sub><img border=0 width=25 height=21 src="lk4.files/image041.gif"></sub> получим</p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=275 height=32 src="lk4.files/image042.gif"></p>
+
+<p class=MsoNormal'> (здесь <i>&#946;</i>  - коэффициент передачи тока в схеме с ОЭ). Следовательно, входное сопротивление ЭП</p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=99 height=27 src="lk4.files/image043.gif"></p>
+
+<p class=MsoNormal> На практике входное сопротивление меньше, поскольку ограничивается элементами, обеспечивающими смещение на базе. Тем не менее, оно в десятки и более раз
+превышает входное сопротивление схемы с ОЭ, что существенно во многих
+практических приложениях.</p>
+
+<p class=MsoNormal style=text-indent:35.45pt'><span style='color:green'>Выходную проводимость</span> ЭП найдем, воспользовавшись выражением из раздела 4.2: </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>              Y<sub>22ос</sub>=Y<sub>22</sub>(1 –
+<i>&#946;K&#176;</i>) &#8776; <i>Y<sub>22</sub>Y<sub>21</sub></i> / <i>Y<sub>22</sub></i> = <i>Y<sub>21</sub></i>.</p>
+
+<p class=MsoNormal>Это согласуется с матрицей <i>Y</i>-параметров схемы с ОК (раздел 2.4). Воспользуемся полученным в том же разделе выражением входной проводимости для схемы с ОК:</p>
+
+<p class=MsoNormal> <i>Y<sub>ВЫХ П</sub></i> = <i>Y<sub>ВЫХ К</sub></i> =<i>&#931; Y<sub>ij</sub></i>– (<i>Y<sub>21</span></sub></i>+ <i>Y<sub>11</sub></i>)(<i>Y<sub>11</sub></i>+ <i>Y</i><i><sub>12</sub></i>) /(<i>Y<sub>11</sub></i> + <i>Y<sub>И</sub></i>) <i>&#8776; </i></p>
+
+<p class=MsoNormal>           =<i>Y<sub>21</sub></i> – <i>Y<sub>21</sub> Y<sub>11 </sub></i>/ (<i>Y<sub>11</sub></i>+ <i>Y<sub>И</sub></i>) = <i>Y<sub>21</sub></i> / (1+ <i>Y<sub>11</sub></i> / <i>Y<sub>И</sub></i>).</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>В области нижних и средних частот выходная проводимость вещественна:</p>
+
+<p class=MsoNormal style='text-indent:35.45pt;'>                         
+<i>g<sub>ВЫХ П </sub></i>= <i>S</i> / (1+<i>g<sub>11</sub></i><i>R<sub>И</sub></i>).</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'> </i>Она зависит от внутреннего сопротивления источника сигнала <i>R<sub>И</sub></i> из-за значительной проводимости обратной передачи повторителя </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>|<i>Y<sub>12 П</sub></i>| &#8776; |<i>Y<sub>11</sub></i>|. Тем не менее  при <i>R<sub>И </sub>&lt;&lt;
+1/ g<sub>11 </sub></i> (т.е. при <i>g<sub>11</sub> R<sub>И </sub>&lt;&lt;1</i>) получим 
+<i>g<sub>ВЫХ П</sub> &#8776; S</i>,  т.е. достаточно велика. </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>При большом <i>R<sub>И  </sub></i>(при <i>g<sub>11</sub></i> <i>R<sub>И </sub></i>&gt;&gt;1) получим:</p>
+
+<p class=MsoNormal style='text-align:center;text-indent:35.45pt'>
+<i>g<sub>ВЫХ П </sub></i><i>&#8776;</i> <i>S</i> / (<i>g<sub>11</sub></i><i>R<sub>И</sub></i>) = <i>&#946;</i><i> / </i><i>R<sub>И</sub></i>.</p>
+
+<p class=MsoNormal>На практике  <i>R<sub>И  </sub></i>= 2...5 кОм, поэтому выходное сопротивление повторителя  </p>
+
+<p class=MsoNormal>                                 <i>R<sub>ВЫХ П</sub> &#8776; R<sub>И</sub></i> / <i>&#946;&#8804; 200 Ом.</i></p>
+
+<p class=MsoNormal> Малость выходного сопротивления ЭП приближает его по свойствам к идеальному источнику напряжения, т.е. ЭП способен отдавать в нагрузку значительный ток. Высокое входное и малое выходное сопротивление позволяет использовать ЭП в качестве
+согласующего каскада (трансформатора сопротивления) – он согласует источники
+сигнала с высоким выходным сопротивлением с низкоомной нагрузкой.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Рассмотрим работу ЭП <span style='color:green'>в области верхних частот</span>. Используем общее выражение  <i>K<sub>ОС</sub></i> = <i>K</i> / (1– <i>&#946; K</i>)  для ЭП:     <i>K<sub>П</sub></i> =<i>K</i> / (1+<i>K</i>).</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'> Для области верхних частот это выражение примет вид</p>
+
+<p class=MsoNormal style='text-align:center'> <sub><img
+border=0 width=507 height=56 src="lk4.files/image044.gif"></sub><sup>,</sup></p>
+
+<p class=MsoNormal>где  <i>K<sub>0П</sub></i> - коэффициент передачи ЭП в области средних частот;</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>                               
+<i>&#964;<sub>Пв </sub></i>= <i>&#964;<sub>В </sub></i> / (1+<i>K<sub>0</sub></i>).</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt;line-height:
+150%;font-size:14.0pt;font-family:"Times New Roman"'>Верхняя граничная частота ЭП </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>                   
+<i>&#969;<sub>ПВ</sub>= 1 /</i><i>&#964;<sub>ПВ</sub></i>=(<i>1+K<sub>0</sub></i>) /<i>&#964;<sub>В</sub></i>= <i>&#969;<sub>В </sub></i>(<i>1 + K<sub>0</sub></i>).</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'> Таким образом, верхняя граничная частота значительно возрастает по сравнению со схемой с ОЭ (это выражение справедливо в пределах области частот, где действует физическая схема замещения транзистора - примерно до <i>(0,3...0,5)f<sub>Т</sub></i> ).</p>
+
+<table border=0 width=142 height=140 cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td>
+<img border=0 width=142 height=140 src="lk4.files/image045.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'><span style='color:green'><b>Входная проводимость ЭП</b></span>, как было получено, в общем виде равна (см. также <a href="javascript:window.open('lk3.htm#_Toc433109514','','scrollbars,    resizable,width=750,height=300');void(0);">раздел 3.3</a>)</p>
+
+<p class=MsoNormal style='text-align:center'><sub><img
+border=0 width=327 height=45 src="lk4.files/image046.gif"></sub><sup>,</sup></p>
+
+<p class=MsoNormal>т.е. уменьшается не только <i>g<sub>ВХ П</sub></i>, но и  <i>C<sub>ВХ П</sub></i>= <i>C<sub>ВХ</sub></i> / (<i>1+K</i>).</p>
+
+<p class=MsoNormal> С учетом выходной проводимости источника сигнала <i>g<sub>И</sub></i> постоянная времени входной цепи ЭП (рис.4.10) </p>
+
+<p class=MsoNormal style='text-align:center'><img
+border=0 width=393 height=56 src="lk4.files/image047.gif">.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Учитывая, что для схемы с ОЭ <sub><img border=0 width=160 height=28 src="lk4.files/image048.gif"></sub>, т.е. больше, чем у ЭП, можно сделать
+вывод, что каскад, нагруженный на ЭП, обеспечит б<i>о</i>льшую площадь
+усиления, чем при работе на каскад с ОЭ.</p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+
+<table cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img border=0 width=156   height=216 src="lk4.files/image049.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'><span style='
+color:green'><a name="m401"></a><b>Истоковый повторитель.</b></span>  Его
+свойства аналогичны ЭП, но есть ряд особенностей. Во-первых, крутизна полевого
+транзистора значительно меньше, чем биполярного, поэтому коэффициент передачи
+практически равен единице только при больших сопротивлениях нагрузки.
+Во-вторых, входную проводимость каскада с ОИ определяет емкость <i>С<sub>ВХ</sub></i>
+(см. <a href="javascript:window.open('lk3.htm#_Toc433109514','','scrollbars,    resizable,width=750,height=300');void(0);">разд.3.3</a>). Поэтому </p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=355 height=52 src="lk4.files/image050.gif"></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'> Это очень небольшая емкость, поэтому когда устройство должно иметь малую входную емкость, на входе ставят истоковый повторитель.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>В полевом транзисторе с <i>p-n</i>
+переходом резистор, включенный в цепь истока, определяет положение рабочей точки. Обычно
+его сопротивление относительно невелико. В истоковом повторителе этот резистор
+выполняет также роль нагрузки. Если его сопротивление недостаточно, чтобы обеспечить
+необходимый коэффициент передачи, используют включение по схеме рис.4.11. Здесь
+смещение снимается с резистора <i>R<sub>Н1</sub></i>, а выходное напряжение – с обоих резисторов в цепи истока.</p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+
+<h2 style='margin-top:18.0pt;margin-bottom:18.0pt;text-align:center;line-height:150%'><a name="_Toc433109526"></a><span style='font-size:16.0pt;font-family:"Times New Roman";color:maroon'>4.6. Усилитель с последовательной ООС по току</span></h2>
+
+<table border=0 width=154 height=229 cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img border=0 width=154 height=229 src="lk4.files/image051.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'>В схеме рассмотренного ранее АУ по схеме с ОЭ изменение параметров элементов в цепи эмиттера может привести к возникновению указанной в заголовке обратной связи. По этой причине элементы цепи ОС на рис.4.12 обозначены с индексами «<i>ос</i>». Ранее влияние этих элементов не учитывалось, поскольку считалось, что
+конденсатор во всем диапазоне частот дает идеальное короткое замыкание. В противном случае возникает последовательная ООС по току, в чем нетрудно убедиться по рис.4.13, на котором изображена та же схема для переменных токов. Через <i>Z<sub>ОС </sub></i> на
+рисунке обозначено общее сопротивление цепи ОС:</p>
+
+<table border=0 width=261 height=175cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img border=0 width=261 height=175 src="lk4.files/image052.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal> <sub><img border=0 width=189 height=31 src="lk4.files/image053.gif"></sub>=<sub><img border=0 width=117 height=28 src="lk4.files/image054.gif"></sub>,</p>
+
+<p class=MsoNormal>где постоянная времени цепочки ОС <sub><img border=0 width=101 height=21 src="lk4.files/image055.gif"></sub>.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'> Из рисунков следует, что  <i>&#946;<sub>Т</sub></i>= &#8722; <i>1</i>,</p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=237 height=23 src="lk4.files/image056.gif"></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>При <i>С<sub>ОС </sub></i>&#8594; &infin;  сопротивление</p>
+
+<p class=MsoNormal><i>Z<sub>ОС </sub></i>&#8594; <i>0</i>,
+т.е.  <i>U<sub>ОС </sub>=0,</i> а  <i>U</span></i> = <i>U<sub>ВХ</sub></i>,   как
+и было ранее.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Подставив в выражение (4.2) для усилителя с ОС по току <i>&#946;<sub>Т</sub></i>= <i>&#8722;</i><i>1, </i><i>Y<sub>Н</sub></i><i>= 1/</i><i>R<sub>Н</sub></i><i> , </i><i>Y<sub>ВЫХ</sub></i>&asymp; <i>Y<sub>22</sub> , </i> получим выражение комплексного коэффициента усиления</p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=493 height=59 src="lk4.files/image057.gif">.</p>
+
+<p class=MsoNormal> В области верхних частот это выражение примет вид:</p>
+
+<table width=100%>
+<tr>
+<td width=90% align=center><img border=0 width=501 height=53 src="lk4.files/image058.gif">
+</td>
+<td width=10%><p class=MsoNormal style='text-align:right'>(4.3)</p>
+</td>
+</tr>
+</table>
+
+<p class=MsoNormal>Здесь имеется в виду, что <i>K<sub>0</sub></i> &asymp; <i>SR<sub>Н</sub></i>  ( в широкополосных АУ влиянием <i>g<sub>22</sub></i> можно
+пренебречь).</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Рассмотрим случай<b> <span style='color:green'>активной ОС</span></b>. Предполагается, что
+конденсатор <i>С<sub>ОС</sub></i> отсутствует и <i>Z<sub>ОС </sub></i>= <i>R<sub>ОС</sub></i>. Выражение (4.3) примет вид</p>
+
+<p class=MsoNormal style='text-align:center'>                 
+<img border=0 width=361 height=56 src="lk4.files/image059.gif">,</p>
+
+<p class=MsoNormal> где <i>F=1+SR<sub>ОС</sub></i>  – глубина ОС.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt;'> Таким образом, коэффициент усиления в области средних частот  <i>К<sub>0ос</sub>=K<sub>0</sub></i> / <i>F</i> , т.е. уменьшается в <i>F</i> раз. Постоянная времени каскада с обратной связью  <i>&#964;<sub>Вос</sub></i> = <i>&#964;<sub>В</sub></i> / <i>F</i> уменьшается во столько же раз. Следовательно, его верхняя граничная частота во столько же раз возрастает:</p>
+
+<p class=MsoNormal style='text-indent:42.55pt'>                      <i>&#969;<sub>Вос </sub></i><i>= 1/</i><i>&#964;<sub>Вос </sub></i>=<i>F</i>/<i>&#964;<sub>В</sub></i> =<i>F</i><i>&#969;<sub>В</sub></i>. </p>
+
+<table border=0 width=433 height=264 cellpadding=0 cellspacing=0 align=center>
+ <tr>
+  <td><img border=0 width=433 height=264 src="lk4.files/image060.gif"></td>
+ </tr>
+</table>
+
+<p class=MsoNormal>При этом площадь усиления - произведение коэффициента усиления на верхнюю граничную частоту - не изменяется. Изменение АЧХ в области верхних частот -
+высокочастотная коррекция – показано на рис.4.14. Биполярный транзистор позволяет
+за счет высокой крутизны получить большие значения <i>К<sub>0</sub></i>, поэтому
+пожертвование коэффициентом усиления в пользу расширения полосы пропускания в
+область верхних частот обычно всегда оправдано. К тому же такая коррекция легко
+реализуется в интегральном исполнении.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Рассмотрим случай <b><span style='color:green'>комплексной ОС,</span></b> когда <i>С<sub>ОС</sub></i>
+&gt;0. Подставив значение <i>Z<sub>ОС</sub></i> в выражение (4.3), получим:</p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=489 height=56 src="lk4.files/image061.gif">.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Если далее найти <i>М</i>(<i>&#969</i> ) – нормированную АЧХ – и использовать метод Брауде (см. <a href="javascript:window.open('lkap4.htm','','scrollbars,    resizable,width=750,height=480');void(0);">Приложение 4</a>), то можно определить параметры цепочки ОС, обеспечивающие оптимальную высокочастотную коррекцию:</p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=189 height=37 src="lk4.files/image062.gif">, </p>
+
+<p class=MsoNormal>где  <sub><img border=0 width=84 height=21 src="lk4.files/image063.gif"></sub>. При этом получаем выигрыш в полосе пропускания </p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=339 height=40 src="lk4.files/image064.gif">,</p>
+
+<p class=MsoNormal> т.е. выигрыш больше, чем в <i>F</i> раз, поэтому площадь усиления при комплексной ОС, в отличие от активной ОС, возрастает.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Номиналы элементов в цепи ОС составляют примерно десятки-сотни Ом для резистора и десятки – сотни пикофарад для конденсатора. Емкость конденсатора, шунтирующего резистор <i>R<sub>Э</sub></i>,
+используемый для термостабилизации, на несколько порядков выше. Емкость его
+настолько велика, что устраняет ООС по току не только на верхних, но и на
+средних частотах. Только на нижних частотах ООС за счет цепочки <i>R<sub>Э</sub></i><i>C<sub>Э</sub></i> проявляется в снижении коэффициента усиления, что приводит к увеличению нижней граничной частоты.</p>
+
+<table border=0 width=94  height=215 cellspacing=0 cellpadding=0  align=left>
+ <tr>
+  <td><img border=0 width=94  height=215 src="lk4.files/image065.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Включение элементов высокочастотной коррекции и эмиттерной термостабилизации показано на рис.4.15. Каждая из цепочек работает в своем диапазоне частот. На значение нижней граничной частоты влияет как значение емкости <i>C<sub>Э</sub></i>, так и емкости <i>C<sub>Р</sub></i> разделительного конденсатора. Если обозначить через <i>М<sub>Э</sub></i> долю искажений, вносимых цепочкой в эмиттерной цепи, а через <i>М<sub>Р </sub></i>- разделительным конденсатором, то значение нормированной АЧХ на нижней граничной частоте <i>М</i>(<i>&#969;<sub>Н</sub></i>) = <i>М<sub>Э</sub>М<sub>Р </sub></i>. Используя полученное выше общее выражение для последовательной ООС по току, можно получить выражение для выбора значения <i>C<sub>Э</sub></i>, позволяющего обеспечить заданное значение <i>М<sub>Э</sub></i>:</p>
+
+<p class=MsoNormal style='text-align:center'><img border=0 width=220 height=61 src="lk4.files/image066.gif">.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Эмиттерная коррекция широко используется в интегральных схемах (ИС) широкополосных усилителей. В полупроводниковых (монолитных) ИС конденсаторы реализуются в виде емкостей <i>p-n</i> переходов. Техническая проблема возникает из-за того, что реализация емкости более 10 пФ требует площади перехода, превышающей площадь всей остальной ИС.</p>
+
+<table border=0 width=137 height=195  cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img  border=0 width=137 height=195 src="lk4.files/image067.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Для экономии площади кристалла в качестве  корректирующего двухполюсника в цепи ООС по току вместо элементов <i>R<sub>ОС</sub></i><i>С<sub>ОС</sub></i> включают генератор тока на транзисторе Т1 (рис.4.16), охваченный параллельной ООС по напряжению через элементы <i>R<sub>K</sub>C<sub>K</sub></i>. За счет ООС по напряжению растет выходная проводимость ГТ, в том числе и ее реактивная часть, имеющая емкостный характер. Это позволяет примерно на порядок уменьшить площадь кристалла. Эквивалентное сопротивление генератора тока как цепи ОС</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>                       
+<i>Z<sub>ОС </sub></i>&asymp;<i> 0,5</i>(<i>Z<sub>K</sub>+1/Y<sub>21</sub></i>),</p>
+
+<p class=MsoNormal>где <i>Z<sub>K</sub></i> - сопротивление корректирующей цепочки <i>R<sub>K</sub>C<sub>K</sub></i>.</p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+
+<h1 align=center style='text-align:center;line-height:150%'><a name="cq100"></a><span
+style='color:olive'>Контрольные вопросы</span></h1>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:-17.85pt'>1.&nbsp;&nbsp; Что
+представляет собой по определению коэффициент обратной связи ?</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:-17.85pt'>2.&nbsp;&nbsp; Назовите
+четыре основных типа усилителей с ОС. Как они классифицируются и какие признаки
+характеризуют основные типы обратных связей ?</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:-17.85pt'>3.&nbsp;&nbsp; Как
+изменятся параметры усилителя, если он охвачен: а) отрицательной ОС по
+напряжению; б) отрицательной ОС по току ?</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:-17.85pt'>4.&nbsp;&nbsp; Какие
+свойства позволяют использовать повторитель в качестве буферного каскада ?</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:-17.85pt'>5.&nbsp;&nbsp; Какого
+типа обратная связь используется в повторителях ? Обоснуйте свой ответ.</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:-17.85pt'>6.&nbsp;&nbsp; Чем
+отличается по свойствам повторитель на полевом транзисторе от повторителя на
+биполярном транзисторе ?</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:-17.85pt'>7.&nbsp;&nbsp; Поясните
+физику действия активной последовательной ООС по току в апериодическом
+усилительном каскаде. Во сколько раз и в какую сторону изменятся за счет действия
+ОС его коэффициент усиления и верхняя граничная частота ?</p>
+
+<p class=MsoNormal style='margin-left:17.85pt;text-indent:-17.85pt'>8.&nbsp;&nbsp; Поясните
+физику действия комплексной последовательной ООС по току. Каким достоинством
+обладает комплексная ООС по сравнению с активной ?</p>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+
+<p class=MsoNormal style='text-align:center;font-size:12pt'><a href="lknav.htm"><b>Оглавление</b></a></p>
+
+</td></tr></table>
+</td></tr></table>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+
+<title>П2</title>
+<link rel=stylesheet type=text/css href=images/lk_all.css>
+
+</head>
+
+<body lang=RU link=blue vlink=purple bgcolor="#f2fff8">
+
+<table width="100%" height="100%" border="0">
+<tr>
+<td align=center valign=top>
+
+<table width="750"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	<td>
+
+
+<p class=MsoNormal style='text-align:right;font-size:11.0pt; color:blue'><a href="lknav.htm"><b>Оглавление</b></a></p>
+
+<h1 style='line-height:150%;font-family:"Times New Roman"'>Приложение 2</h1>
+
+<h2 style='text-align:center;line-height:150%;font-size:16.0pt;font-family:
+"Times New Roman";color:olive;font-style:normal'>П2.1. Y-параметры
+транзистора как четырехполюсника</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table cellspacing=0 cellpadding=0 align=left>
+ <tr>
+  <td><img  border=0 width=197 height=166 src="lkap2.files/image015.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Четырехполюсник
+представляет собой систему с четырьмя зажимами: <i>1 - 1</i> – вход, <i>2 - 2</i>
+– выход <nobr>(рис.П2.1)</nobr>. Входные и выходные переменные (синусоидальные токи и
+напряжения) связаны между собой функциональными зависимостями. В транзисторе
+связь токов и напряжений нелинейная. Поэтому рассматриваемый четырехполюсник в
+общем случае <i>нелинейный </i> и, кроме того,<i> активный, </i>т.е. он содержит
+внутри себя источник переменного тока, отражающий электропреобразовательные
+свойства транзистора. Связь между токами и напряжениями в четырехполюснике
+представляется двумя функциональными зависимостями, причем из величин <i>i<sub>ВХ</sub></i> ,  <i>i<sub> ВыХ</sub></i> ,  <i>u<sub>ВХ</sub></i> и <i>u<sub>ВЫХ </sub></i>  любая пара переменных может быть выбрана независимой, а другая - зависимой.</p>
+
+<!--Здесь -->
+
+<p class=MsoNormal style='text-indent:42.55pt'>Для описания транзистора как четырехполюсника в усилителях чаще всего используют такую связь переменных: </p>
+
+<table cellspacing=0 cellpadding=0 align=center>
+ <tr><img   border=0 width=162 height=49 src="lkap2.files/image016.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>Нелинейная зависимость может быть  представлена в виде полных дифференциалов (<i>уравнения передачи</i> четырехполюсника)</p>
+
+<table cellspacing=0 cellpadding=0 align=center>
+ <tr>
+  <td><img   border=0 width=368 height=56 src="lkap2.files/image006.gif">
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>Коэффициенты в уравнениях в виде частных производных называются <i>собственными (внутренними) параметрами </i>четырехполюсника. Они образуют матрицу так называемых <i>Y</i>-параметров, имеющих
+размерность проводимости <sub><img border=0 width=24 height=21
+src="lkap2.files/image017.gif"><sup> =</sup><sub><img
+border=0 width=69 height=49 src="lkap2.files/image018.gif"></sub></sub>.   Тогда
+уравнения передачи</p>
+
+<p class=MsoNormal style='text-align:center;'><sub><img
+border=0 width=208 height=49 src="lkap2.files/image019.gif"></sub> </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Вначале будем рассматривать <i>линейные усилители, </i>на вход которых подаются сигналы малых амплитуд. В этом случае можно использовать так называемые <i>малосигнальные Y-параметры </i>(или,
+что то же, дифференциальные). При работе в малосигнальном режиме участок вольт-амперной
+характеристики транзистора вблизи рабочей точки без большой погрешности можно
+заменить отрезком прямой линии. В этом случае взаимосвязь приращений токов и
+напряжений можно считать линейной (а значит. четырехполюсник будет <i>линейным</i>),
+т.е. дифференциалы можно заменить абсолютными значениями малых приращений токов
+и напряжений в транзисторе. Поскольку амплитуда синусоидального сигнала тоже
+является таким приращением, уравнения передачи примут вид:</p>
+
+<table border=0 width=100%>
+<tr>
+<td width=90%>
+<p class=MsoNormal style='text-align:center'><img
+border=0 width=196 height=51 src="lkap2.files/image020.gif"></p></td>
+<td width=10%><p class=MsoNormal style='text-align:center'>(П2.1)</p></td>                                                   
+</tr>
+</table>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Заметим, что в уравнениях передачи фигурируют <i>комплексные амплитуды </i> токов и напряжений.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt;'>Физический
+смысл <i>Y</i>-параметров
+нетрудно выяснить в режиме короткого замыкания (по переменному току) по входу и
+выходу четырехполюсника. При замыкании по выходу (<i>U<sub>ВЫХ</sub></i> = 0):</p>
+
+<ul>
+<li class=MsoNormal><i>Y<sub>11</sub> </i>= <i>I<sub>ВХ </sub>/ U<sub>ВХ</sub></i> - входная проводимость транзистора при к.з. по выходу;</li>
+
+<li class=MsoNormal><i>Y<sub>21 </sub></i>= <i>I<sub>ВЫХ </sub>/ U<sub>ВХ </sub></i>- проводимость прямой передачи (крутизна) при к.з. по выходу;</li>
+<br><br>
+<p class=MsoNormal>При замыкании по входу (<i>U<sub>ВХ</sub></i> = 0):</p>
+
+<li class=MsoNormal><i>Y</i><sub>12</sub> = <i>I<sub>ВХ </sub>/U<sub>ВЫХ</sub></i> - проводимость обратной передачи при к.з. по входу;</p>
+
+<li class=MsoNormal><i>Y</i><sub>22</sub> = <i>I<sub>ВЫХ </sub>/U<sub>ВЫХ</sub></i> - выходная проводимость транзистора при к.з. по входу.</p>
+</ul>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Заметим,
+что все <i>Y</i>&nbsp;-&nbsp;параметры являются комплексными проводимостями, т.е. указывают не только соотношение амплитуд соответствующих переменных, но соотношение их начальных фаз. Поскольку соотношение амплитуд и фаз токов и напряжений в транзисторе зависит от частоты, частотнозависимыми будут и <i>Y</i> - параметры.</p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-family:"Times New Roman"'>&nbsp;</span></p>
+
+</div>
+
+<p align=center>
+<a href="#top">
+<img src="../images/arrow_up.gif" width=16 height=16 border=0
+alt="В начало страницы"></a>
+</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+* source PR4
+X_U2         N00897 N00222 N01008 N01137 N01182 UA741 
+R_R1         0 N00222  30.303k  
+R_R2         N00222 N01182  3000k  
+R_R3         N00346 N00897  100k  
+V_V1         0 N01137 15Vdc
+V_V2         N01008 0 15Vdc
+V_V5         N00346 0 DC 0Vdc AC 1Vac 

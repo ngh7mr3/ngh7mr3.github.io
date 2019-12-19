@@ -1,0 +1,128 @@
+
+**** 05/29/05 22:08:51 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-pr3"  [ c:\PROGRAM FILES\ORCAD\CAPTURE\PROJECTS\schemata3-SCHEMATIC1-pr3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "schemata3-SCHEMATIC1-pr3.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\schemata3-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING schemata3-SCHEMATIC1.net ****
+* source SCHEMATA3
+Q_VT1         N00551 0 N00763 KT307 
+Q_VT2         N00522 N00709 N00763 KT307 
+Q_VT3         N00829 N00829 N00917 KT3102 
+C_C1         N00522 N00551  30p  
+Q_VT4         N00763 N00829 N00917 KT3102 
+V_V1         N00480 0 3.5Vdc
+R_R1         N00522 N00551  560  
+V_V2         0 N00917 5Vdc
+R_R2         N00551 N00480  190  
+R_R3         N00522 N00480  190  
+R_R4         0 N00829  1.8k  
+V_V3         N00709 0 DC 0Vdc AC 1Vac 
+
+**** RESUMING schemata3-SCHEMATIC1-pr3.sim.cir ****
+.END
+
+**** 05/29/05 22:08:51 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-pr3"  [ c:\PROGRAM FILES\ORCAD\CAPTURE\PROJECTS\schemata3-SCHEMATIC1-pr3.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               KT307           KT3102          
+               NPN             NPN             
+          IS    2.600000E-12    5.911000E-15 
+          BF   50             809.9          
+          NF    1               1            
+         VAF   86              62.37         
+         IKF     .4922           .01426      
+         ISE  500.000000E-09    5.911000E-15 
+          NE    7.428           1.358        
+          BR    2.713           1.287        
+          NR     .9             1            
+         IKR     .25                         
+         ISC   21.2                          
+          RB  140              10            
+          RC    1.05            1.61         
+         CJE   13.300000E-12    4.973000E-12 
+         VJE     .69                         
+         MJE                     .42         
+         CJC    7.200000E-12    4.017000E-12 
+         VJC     .65                         
+         MJC                     .32         
+          TF  282.500000E-12  820.900000E-12 
+         XTF    2               7            
+         VTF   80               4            
+         ITF     .52             .35         
+          TR   57.710000E-09    4.680000E-09 
+         XTB    1.5             1.5          
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 05/29/05 22:08:51 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-pr3"  [ c:\PROGRAM FILES\ORCAD\CAPTURE\PROJECTS\schemata3-SCHEMATIC1-pr3.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00480)    3.5000 (N00522)    3.2660 (N00551)    3.2660 (N00709)    0.0000     
+
+(N00763)    -.5200 (N00829)   -4.3048 (N00917)   -5.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.463E-03
+    V_V2        -4.916E-03
+    V_V3        -3.061E-05
+
+    TOTAL POWER DISSIPATION   3.32E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .14
+

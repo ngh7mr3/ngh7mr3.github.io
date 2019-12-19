@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-pr31"  [ C:\Program Files\Orcad\Capture\Projects\SCHEMATA3\schemata3-schematic1-pr31.sim ] 
+
+** Creating circuit file "schemata3-schematic1-pr31.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 1e3 1e8
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\schemata3-SCHEMATIC1.net" 
+
+
+.END

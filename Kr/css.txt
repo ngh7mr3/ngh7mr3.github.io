@@ -1,0 +1,111 @@
+                                                                p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    font-size:14.0pt;
+    font-family:Arial;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    font-size:12.0pt;
+    font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    font-size:10.0pt;
+    font-family:"Times New Roman";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    text-align:center;
+    font-size:12.0pt;
+    font-family:Arial;
+    font-weight:bold;}
+h1
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    text-align:center;
+    line-height:150%;
+    page-break-after:avoid;
+    layout-grid-mode:char;
+    font-size:14.0pt;
+    font-family:Arial;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    text-align:justify;
+    text-indent:23.0pt;
+    line-height:150%;
+    layout-grid-mode:char;
+    font-size:14.0pt;
+    font-family:Arial;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    text-align:justify;
+    text-indent:24.0pt;
+    line-height:150%;
+    layout-grid-mode:char;
+    font-size:14.0pt;
+    font-family:Arial;}
+a:link, span.MsoHyperlink
+    {color:blue;
+    text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+    {color:purple;
+    text-decoration:underline;}
+p.Normal, li.Normal, div.Normal
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    text-indent:23.0pt;
+    line-height:115%;
+    layout-grid-mode:char;
+    font-size:10.0pt;
+    font-family:"Times New Roman";}
+p.page_content
+    {font-size: 10pt; color: navy; text-align: left; margin-left: 100; }
+
+a.doc_menu {
+    color: #000066;
+    font-family: Arial, Verdana, geneva, sans-serif;
+    font-size: 10pt;
+    font-weight: normal; 
+}
+a.doc_menu:link {
+    color: #000066;
+    text-decoration: none; 
+}
+a.doc_menu:visited {
+    color: #000066;
+    text-decoration: none; 
+}
+a.doc_menu:hover {
+    font-weight: bold;
+    text-decoration: underline; 
+}
+a.doc_menu:onMouseOver {
+    cursor: arrow; 
+}    
+
+p.Normal, li.Normal, div.Normal
+    {margin:0cm;
+    margin-bottom:.0001pt;
+    text-indent:23.0pt;
+    line-height:115%;
+    layout-grid-mode:char;
+    font-size:10.0pt;
+    font-family:"Times New Roman";}
+
+@page Section1
+    {size:595.3pt 841.9pt;
+    margin:70.9pt 42.55pt 2.0cm 59.55pt;}
+div.Section1
+    {page:Section1;}
+@page Section2
+    {size:21.0cm 842.0pt;
+    margin:70.9pt 42.55pt 62.35pt 70.9pt;}
+div.Section2
+    {page:Section2;}
+body {margin:10 30 10 30; background:#f3e9d4;}
+
+.inline_mark {vertical-align: middle;}
+
